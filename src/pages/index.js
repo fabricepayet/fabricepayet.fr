@@ -3,10 +3,24 @@ import Link from 'gatsby-link'
 
 const IndexPage = () => (
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <h1>Bienvenue</h1>
+    <form
+      action=""
+      method="post"
+      name="contact"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
+      <input type="text" name="name" placeholder="Votre nom" />
+      <input type="email" name="email" placeholder="Votre email" />
+      <textarea
+        name="message"
+        cols="30"
+        rows="10"
+        placeholder="Votre message"
+      />
+      <button>Send</button>
+    </form>
   </div>
 )
 
