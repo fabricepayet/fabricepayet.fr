@@ -8,23 +8,22 @@ import './index.css'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Fabrice Payet: Freelance Full Stack Developer"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        {
+          name: 'description',
+          content:
+            "Fabrice Payet est développeur depuis une dizaine d'années. Il a travaillé avec de nombreuses startup dans la validation et conception de leur produit.",
+        },
+        {
+          name: 'keywords',
+          content:
+            'fabrice, payet, développeur, freelance, réunion, javascript, application, mobile, web, meteorjs',
+        },
       ]}
     />
     <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
-    </div>
+    <div>{children()}</div>
   </div>
 )
 

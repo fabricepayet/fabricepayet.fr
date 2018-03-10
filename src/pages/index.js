@@ -2,17 +2,19 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
+import Photo from '../images/photo.jpg'
+
 const FormContainer = styled.div`
-  margin: 0 auto;
-  max-width: 960px;
   text-align: center;
+  background-color: rebeccapurple;
+  padding: 24px;
 
   input,
   textarea {
     width: 60%;
     margin-bottom: 6px;
     border-radius: 6px;
-    padding: 3px 6px;
+    padding: 4px 8px;
     outline: none;
     border: 1px solid #bbb;
   }
@@ -24,34 +26,63 @@ const FormContainer = styled.div`
   }
 `
 
+const ResumeContainer = styled.div`
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 160px;
+    border-radius: 50%;
+    margin-right: 24px;
+  }
+`
+
+const InnerContainer = styled.div`
+  margin: 0px auto;
+  max-width: 960px;
+  padding: 0px 1.0875rem 1.45rem;
+`
+
 const IndexPage = () => (
   <div>
-    <h1>Bienvenue</h1>
+    <InnerContainer>
+      <ResumeContainer>
+        <img src={Photo} alt="Fabrice Payet" />
+        <p>
+          En tant que développeur full stack, j'ai travaillé avec de nombreuses
+          startup dans validation et la conception de leur produit. Actuellement
+          indépendant, je propose mes services de développement et
+          d'accompagnement dans des projets d'applications web et mobile.
+        </p>
+      </ResumeContainer>
+    </InnerContainer>
     <FormContainer>
-      <form
-        action=""
-        method="post"
-        name="contact-form"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
-        <div>
-          <input type="text" name="name" placeholder="Votre nom" />
-        </div>
+      <InnerContainer>
+        <form
+          action=""
+          method="post"
+          name="contact-form"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <div>
+            <input type="text" name="name" placeholder="Votre nom" />
+          </div>
 
-        <div>
-          <input type="email" name="email" placeholder="Votre email" />
-        </div>
-        <div>
-          <textarea
-            name="message"
-            cols="30"
-            rows="10"
-            placeholder="Votre message"
-          />
-        </div>
-        <button>Envoyer</button>
-      </form>
+          <div>
+            <input type="email" name="email" placeholder="Votre email" />
+          </div>
+          <div>
+            <textarea
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="Votre message"
+            />
+          </div>
+          <button>Envoyer</button>
+        </form>
+      </InnerContainer>
     </FormContainer>
   </div>
 )
