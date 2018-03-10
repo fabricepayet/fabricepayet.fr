@@ -6,23 +6,24 @@ import Photo from '../images/photo.jpg'
 
 const FormContainer = styled.div`
   text-align: center;
-  background-color: rebeccapurple;
+  background-color: #413b77;
   padding: 24px;
 
   input,
   textarea {
     width: 60%;
-    margin-bottom: 6px;
-    border-radius: 6px;
-    padding: 4px 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 8px 12px;
     outline: none;
     border: 1px solid #bbb;
   }
 
   button {
-    border-radius: 6px;
-    padding: 2px 6px;
+    border-radius: 8px;
     border: 1px solid #aaaaaa;
+    background-color: white;
+    padding: 8px 20px;
   }
 `
 
