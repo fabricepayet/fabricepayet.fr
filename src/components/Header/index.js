@@ -71,10 +71,10 @@ const Header = () => (
       </LinkContainer>
       <IdentityContainer>
         <div>
-          <div style={{ fontWeight: 'bold', fontSize: '18' }}>
+          <div style={{ fontWeight: 'bold', fontSize: '18px' }}>
             Fabrice Payet
           </div>
-          <div style={{ fontStyle: 'italic', fontSize: '14' }}>
+          <div style={{ fontStyle: 'italic', fontSize: '14px' }}>
             Full Stack Developer
           </div>
         </div>
