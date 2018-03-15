@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import './index.css'
 
 const TemplateWrapper = ({ children }) => (
@@ -13,7 +14,7 @@ const TemplateWrapper = ({ children }) => (
         {
           name: 'description',
           content:
-            "Fabrice Payet est développeur depuis une dizaine d'années. Il a travaillé avec de nombreuses startup dans la validation et conception de leur produit.",
+            "Fabrice Payet est développeur depuis une dizaine d'années. Il a travaillé avec de nombreuses startups dans la validation et conception de leur produit.",
         },
         {
           name: 'keywords',
@@ -24,6 +25,7 @@ const TemplateWrapper = ({ children }) => (
     />
     <Header />
     <div>{children()}</div>
+    <Footer />
   </div>
 )
 
