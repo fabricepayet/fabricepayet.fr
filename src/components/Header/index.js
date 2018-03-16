@@ -9,17 +9,10 @@ const LinkContainer = styled.div`
 
   a {
     margin-right: 24px;
-    text-decoration: none;
-    color: #0091ca;
+    text-decoration: none !important;
     border-bottom: 4px solid transparent;
-
-  }
-
-  a:hover {
-    border-color: #0091ca:
   }
 `
-
 const HeaderInner = styled.div`
   display: flex;
   align-item: center;
@@ -46,28 +39,42 @@ const IdentityContainer = styled.div`
 `
 
 const Header = () => (
-  <div style={{ borderBottom: '1px solid #ddd', marginBottom: '48' }}>
+  <div style={{ borderBottom: '1px solid #ddd', marginBottom: '48px' }}>
     <HeaderInner>
       <LinkContainer>
         <Link
           to="/"
+          exact
           activeStyle={{
-            color: 'black',
+            color: '#116756',
           }}
         >
           About
         </Link>
         <Link
+          to="/resume/"
+          activeStyle={{
+            color: '#116756',
+          }}
+        >
+          Resume
+        </Link>
+        <Link
           to="/portfolio/"
           activeStyle={{
-            color: 'black',
+            color: '#116756',
           }}
         >
           Portfolio
         </Link>
-        <a href="https://github.com/fpayet" target="_blank">
-          Github
-        </a>
+        <Link
+          to="/contact/"
+          activeStyle={{
+            color: '#116756',
+          }}
+        >
+          Contact
+        </Link>
       </LinkContainer>
       <IdentityContainer>
         <div>

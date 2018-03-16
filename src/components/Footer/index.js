@@ -2,26 +2,14 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-const FormContainer = styled.div`
+const FooterContainer = styled.div`
+  padding: 48px 0;
   text-align: center;
-  background-color: #0091ca;
-  padding: 48px 24px;
-
-  input,
-  textarea {
-    width: 60%;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    padding: 8px 12px;
-    outline: none;
-    border: 1px solid #bbb;
-  }
-
-  button {
-    border-radius: 8px;
-    border: 1px solid #aaaaaa;
-    background-color: white;
-    padding: 8px 20px;
+`
+const LinkContainer = styled.div`
+  a {
+    margin-right: 24px;
+    text-align: center;
   }
 `
 
@@ -35,37 +23,24 @@ const InnerContainer = styled.div`
   }
 `
 
-const Footer = () => (
-  <div>
-    <FormContainer>
+const Footer = () => {
+  return (
+    <FooterContainer>
       <InnerContainer>
-        <form
-          action=""
-          method="post"
-          name="contact-form"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-        >
-          <div>
-            <input type="text" name="name" placeholder="Nom" />
-          </div>
-
-          <div>
-            <input type="email" name="email" placeholder="Email" />
-          </div>
-          <div>
-            <textarea
-              name="message"
-              cols="30"
-              rows="10"
-              placeholder="Message"
-            />
-          </div>
-          <button>Envoyer</button>
-        </form>
+        <LinkContainer>
+          <a href="https://github.com/fpayet" target="_blank">
+            Github
+          </a>
+          <a
+            href="https://www.linkedin.com/in/fabricepayetpro/"
+            target="_blank"
+          >
+            Linkedin
+          </a>
+        </LinkContainer>
       </InnerContainer>
-    </FormContainer>
-  </div>
-)
+    </FooterContainer>
+  )
+}
 
 export default Footer

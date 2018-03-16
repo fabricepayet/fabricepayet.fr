@@ -6,13 +6,8 @@ const ResumeContainer = styled.div`
   display: flex;
   align-items: center;
 
-  p {
-    line-height: 170%;
-  }
-
   a {
     text-decoration: none;
-    color: #0091ca;
   }
 `
 
@@ -26,7 +21,7 @@ const IndexPage = () => (
   <div>
     <InnerContainer>
       <ResumeContainer>
-        <p style={{ lineHeight: '170%' }}>
+        <p>
           Je suis <Link to="/">Fabrice Payet</Link>, développeur Full Stack &
           Scrum Master. Durant les dernieres années, j'ai pu travaillé avec de
           nombreuses startups dans la création et la validation de leur produit.
