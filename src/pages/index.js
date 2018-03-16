@@ -22,11 +22,12 @@ const IndexPage = () => (
     <InnerContainer>
       <ResumeContainer>
         <p>
-          Je suis <Link to="/">Fabrice Payet</Link>, développeur Full Stack &
-          Scrum Master. Durant les dernieres années, j'ai pu travaillé avec de
-          nombreuses startups dans la création et la validation de leur produit.
-          Actuellement indépendant, je propose mes services de développement
-          pour la création d'application web et mobile.
+          Je suis <Link to="/">Fabrice Payet</Link>,{' '}
+          <strong>développeur full stack & Scrum master</strong>. Durant les
+          dernieres années, j'ai pu travaillé avec de nombreuses startups dans
+          la création et la validation de leur produit. Actuellement
+          indépendant, je propose mes services de développement pour la{' '}
+          <strong>création d'application web et mobile</strong>.
         </p>
       </ResumeContainer>
     </InnerContainer>

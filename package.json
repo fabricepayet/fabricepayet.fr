@@ -13,11 +13,9 @@
     "react-helmet": "^5.2.0",
     "styled-components": "^3.2.1",
     "typography": "^0.16.6",
-    "typography-theme-fairy-gates": "^0.15.11"
+    "typography-theme-de-young": "^0.16.9"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",

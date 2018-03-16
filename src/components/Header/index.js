@@ -10,22 +10,22 @@ const LinkContainer = styled.div`
   a {
     margin-right: 24px;
     text-decoration: none !important;
-    border-bottom: 4px solid transparent;
   }
 `
 const HeaderInner = styled.div`
   display: flex;
   align-item: center;
   justify-content: center;
-  margin: 12px auto;
+  margin: 0 auto;
   max-width: 960px;
 `
 const IdentityContainer = styled.div`
   display: flex;
+  align-items: center;
 
   img {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     margin-left: 12px;
     margin-bottom: 0;
@@ -39,14 +39,20 @@ const IdentityContainer = styled.div`
 `
 
 const Header = () => (
-  <div style={{ borderBottom: '1px solid #ddd', marginBottom: '48px' }}>
+  <div
+    style={{
+      borderBottom: '1px solid #ddd',
+      marginBottom: '48px',
+      backgroundColor: 'whitesmoke',
+    }}
+  >
     <HeaderInner>
       <LinkContainer>
         <Link
           to="/"
           exact
           activeStyle={{
-            color: '#116756',
+            color: 'black',
           }}
         >
           About
@@ -54,7 +60,7 @@ const Header = () => (
         <Link
           to="/resume/"
           activeStyle={{
-            color: '#116756',
+            color: 'black',
           }}
         >
           Resume
@@ -62,7 +68,7 @@ const Header = () => (
         <Link
           to="/portfolio/"
           activeStyle={{
-            color: '#116756',
+            color: 'black',
           }}
         >
           Portfolio
@@ -70,7 +76,7 @@ const Header = () => (
         <Link
           to="/contact/"
           activeStyle={{
-            color: '#116756',
+            color: 'black',
           }}
         >
           Contact

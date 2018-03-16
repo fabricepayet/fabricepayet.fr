@@ -26,6 +26,10 @@ const FormContainer = styled.div`
     background-color: white;
     padding: 8px 20px;
   }
+
+  form {
+    margin-bottom: 0;
+  }
 `
 
 const PortfolioPage = () => (

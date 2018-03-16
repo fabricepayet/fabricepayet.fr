@@ -3,8 +3,10 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 const FooterContainer = styled.div`
-  padding: 48px 0;
+  padding: 24px 0;
   text-align: center;
+  border-top: 1px solid #ddd;
+  background-color: whitesmoke;
 `
 const LinkContainer = styled.div`
   a {

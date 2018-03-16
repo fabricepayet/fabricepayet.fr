@@ -1,6 +1,6 @@
 import Typography from 'typography'
-import fairyGatesTheme from 'typography-theme-fairy-gates'
+import deYoungTheme from 'typography-theme-de-young'
 
-const typography = new Typography(fairyGatesTheme)
+const typography = new Typography(deYoungTheme)
 
 export default typography
