@@ -17,7 +17,12 @@ const HeaderInner = styled.div`
   align-item: center;
   justify-content: center;
   margin: 0 auto;
+  flex-direction: row-reverse;
   max-width: 960px;
+
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
 `
 const IdentityContainer = styled.div`
   display: flex;
@@ -36,6 +41,11 @@ const IdentityContainer = styled.div`
     flex-direction: column;
     justify-content: center;
   }
+
+  @media screen and (max-width: 600px) {
+    justify-content: center;
+    padding-top: 24px;
+  }
 `
 
 const Header = () => (
@@ -47,6 +57,17 @@ const Header = () => (
     }}
   >
     <HeaderInner>
+      <IdentityContainer>
+        <div>
+          <div style={{ fontWeight: 'bold', fontSize: '18px' }}>
+            Fabrice Payet
+          </div>
+          <div style={{ fontStyle: 'italic', fontSize: '14px' }}>
+            Full Stack Developer
+          </div>
+        </div>
+        <img src={Photo} alt="Fabrice Payet" />
+      </IdentityContainer>
       <LinkContainer>
         <Link
           to="/"
@@ -82,17 +103,6 @@ const Header = () => (
           Contact
         </Link>
       </LinkContainer>
-      <IdentityContainer>
-        <div>
-          <div style={{ fontWeight: 'bold', fontSize: '18px' }}>
-            Fabrice Payet
-          </div>
-          <div style={{ fontStyle: 'italic', fontSize: '14px' }}>
-            Full Stack Developer
-          </div>
-        </div>
-        <img src={Photo} alt="Fabrice Payet" />
-      </IdentityContainer>
     </HeaderInner>
   </div>
 )
