@@ -6,10 +6,16 @@ import Photo from '../../images/photo.jpg'
 const LinkContainer = styled.div`
   padding: 1.45rem 1.0875rem;
   flex: 1 1 auto;
+  display: flex;
 
   a {
     margin-right: 24px;
     text-decoration: none !important;
+  }
+
+  @media screen and (max-width: 600px) {
+    justify-content: center;
+    padding-top: 24px;
   }
 `
 const HeaderInner = styled.div`

@@ -24,10 +24,10 @@ const IndexPage = () => (
         <p>
           Je suis <Link to="/">Fabrice Payet</Link>,{' '}
           <strong>développeur full stack & Scrum master</strong>. Durant les
-          dernieres années, j'ai pu travaillé avec de nombreuses startups dans
-          la création et la validation de leur produit. Actuellement
+          dernières années, j'ai pu travailler avec de nombreuses startups dans
+          la création et la validation de leurs produits. Actuellement
           indépendant, je propose mes services de développement pour la{' '}
-          <strong>création d'application web et mobile</strong>.
+          <strong>création d'applications web et mobile</strong>.
         </p>
       </ResumeContainer>
     </InnerContainer>
