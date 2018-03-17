@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import FontAwesome from 'react-fontawesome'
 
 const FooterContainer = styled.div`
   padding: 24px 0;
