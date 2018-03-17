@@ -46,10 +46,10 @@ const PortfolioPage = () => (
         <div>Vous avez une idée de projet ? Une question ? Ecrivez-moi.</div>
 
         <form
-          action=""
           method="post"
           name="form-contact"
           data-netlify="true"
+          netlify
           data-netlify-honeypot="bot-field"
         >
           <div>
