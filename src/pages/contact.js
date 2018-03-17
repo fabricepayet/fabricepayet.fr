@@ -39,7 +39,7 @@ const PortfolioPage = () => (
         <form
           action=""
           method="post"
-          name="contact-form"
+          name="form-contact"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
