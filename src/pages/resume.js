@@ -12,7 +12,8 @@ const InnerContainer = styled.div`
 
 const ResumeContainer = styled.div`
   h2 {
-    border-bottom: 4px solid #eaeaea;
+    border-bottom: 4px solid #d8d8d8;
+    padding-bottom: 0.2rem;
   }
 `
 

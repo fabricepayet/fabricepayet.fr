@@ -25,9 +25,15 @@ const FormContainer = styled.div`
     border: 1px solid #aaaaaa;
     background-color: white;
     padding: 8px 20px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #eaeaea;
+    }
   }
 
   form {
+    margin-top: 24px;
     margin-bottom: 0;
   }
 `
@@ -36,6 +42,9 @@ const PortfolioPage = () => (
   <InnerContainer>
     <FormContainer>
       <InnerContainer>
+        <h2>Contactez-moi</h2>
+        <div>Vous avez une idée de projet ? Une question ? Ecrivez-moi.</div>
+
         <form
           action=""
           method="post"
