@@ -9,6 +9,7 @@ const ResumeItemContainer = styled.div`
 
   h3 {
     margin-bottom: 0.3rem;
+    font-size: 1.2em;
   }
 
   img {
@@ -20,6 +21,7 @@ const ResumeItemContainer = styled.div`
 
   p {
     margin-bottom: 0;
+    font-size: 0.9rem;
   }
 `
 

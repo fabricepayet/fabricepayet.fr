@@ -13,7 +13,10 @@ const InnerContainer = styled.div`
 const ResumeContainer = styled.div`
   h2 {
     border-bottom: 4px solid #d8d8d8;
-    padding-bottom: 0.2rem;
+    padding: 0.2rem;
+    background-color: #e2e0e0;
+    padding-left: 24px;
+    border-radius: 6px;
   }
 `
 
