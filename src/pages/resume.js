@@ -22,6 +22,7 @@ const ResumeContainer = styled.div`
 
 const ResumePage = () => (
   <InnerContainer>
+    {/* <p>Mon parcours professionnel et mes formations</p> */}
     <ResumeContainer>
       <div>
         <h2>Work Experience</h2>
@@ -74,8 +75,7 @@ const ResumePage = () => (
             date="jui2012 - mai 2013"
             description="Développement sur système embarqués
             Développement d’un protocole de communication pour la récupération de données
-            Conception d’une solution d’authentification centralisée sur un parc hétérogène            
-            "
+            Conception d’une solution d’authentification centralisée sur un parc hétérogène"
             logo="rdtronic.jpg"
             technologies="Java, Linux"
             companyLink="http://www.rdtronic.com"

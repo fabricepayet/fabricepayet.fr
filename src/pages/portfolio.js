@@ -10,6 +10,7 @@ const InnerContainer = styled.div`
 
 const PortfolioPage = () => (
   <InnerContainer>
+    <h2>Mes derniers projets</h2>
     <div>En construction...</div>
   </InnerContainer>
 )

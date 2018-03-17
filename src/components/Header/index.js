@@ -58,7 +58,6 @@ const Header = () => (
   <div
     style={{
       borderBottom: '1px solid #ddd',
-      marginBottom: '48px',
       backgroundColor: 'whitesmoke',
     }}
   >
