@@ -33,8 +33,7 @@ const FormContainer = styled.div`
   }
 
   form {
-    margin-top: 24px;
-    margin-bottom: 0;
+    margin: 24px 0;
   }
 `
 
@@ -68,6 +67,11 @@ const PortfolioPage = () => (
           </div>
           <button>Envoyer</button>
         </form>
+
+        <div>
+          ou envoyer moi simplement{' '}
+          <a href="mailto:hello@fabricepayet.fr">un email</a>
+        </div>
       </InnerContainer>
     </FormContainer>
   </InnerContainer>
