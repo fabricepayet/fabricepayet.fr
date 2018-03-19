@@ -96,10 +96,10 @@ const ResumePage = () => (
         <h2>Education</h2>
         <div>
           <ResumeItem
-            title="Master professionnel Informatique, informatique avancée et applications"
-            company="Université de provence"
+            title="Master professionnel Informatique, Informatique Avancée et Applications (I2A)"
+            company="Université d'Aix - Marseille"
             date="2009 - 2011"
-            logo="universityprovence.jpg"
+            logo="universityaixmarseille.jpg"
             companyLink="https://www.univ-amu.fr/"
           />
           <ResumeItem
