@@ -68,11 +68,6 @@ const PortfolioPage = () => (
           </div>
           <button>Envoyer</button>
         </form>
-
-        <div>
-          ou envoyer moi simplement{' '}
-          <a href="mailto:hello@fabricepayet.fr">un email</a>
-        </div>
       </InnerContainer>
     </FormContainer>
   </InnerContainer>
