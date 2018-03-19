@@ -92,14 +92,6 @@ const Header = () => (
           Resume
         </Link>
         <Link
-          to="/portfolio/"
-          activeStyle={{
-            color: 'black',
-          }}
-        >
-          Portfolio
-        </Link>
-        <Link
           to="/contact/"
           activeStyle={{
             color: 'black',
