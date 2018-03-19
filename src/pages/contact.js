@@ -49,6 +49,7 @@ const PortfolioPage = () => (
           name="contact"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
+          action="/success"
         >
           <div>
             <input type="text" name="name" placeholder="Nom" />
