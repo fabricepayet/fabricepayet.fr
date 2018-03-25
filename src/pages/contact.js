@@ -37,7 +37,7 @@ const FormContainer = styled.div`
   }
 `
 
-const PortfolioPage = () => (
+const ContactPage = () => (
   <InnerContainer>
     <FormContainer>
       <InnerContainer>
@@ -46,11 +46,13 @@ const PortfolioPage = () => (
 
         <form
           method="post"
-          name="contact"
+          action="/success"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          action="/success"
+          name="contact"
         >
+          <input type="hidden" name="form-name" value="contact" />
+
           <div>
             <input type="text" name="name" placeholder="Nom" />
           </div>
@@ -73,4 +75,4 @@ const PortfolioPage = () => (
   </InnerContainer>
 )
 
-export default PortfolioPage
+export default ContactPage

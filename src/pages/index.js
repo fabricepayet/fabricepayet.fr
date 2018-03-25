@@ -24,7 +24,7 @@ const IndexPage = () => (
           actuellement à{' '}
           <a href="https://www.iledelareunion.net/" target="_blank">
             la Réunion
-          </a>. Durant <Link to="/resume/">mon parcours professionel</Link>,
+          </a>. Durant <Link to="/resume/">mon parcours professionnel</Link>,
           j'ai travaillé avec de nombreuses startups dans la création et la
           validation de leurs produits. Je sais aussi encadrer une équipe et
           organiser des cycles de développement en tant que{' '}

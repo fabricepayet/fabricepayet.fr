@@ -9,10 +9,6 @@ const NotFoundPage = () => (
     }}
   >
     <h1>Il n'y a rien ici...</h1>
-    <img
-      src="https://media.giphy.com/media/9J7tdYltWyXIY/giphy.gif"
-      alt="404 page gif"
-    />
   </div>
 )
 
