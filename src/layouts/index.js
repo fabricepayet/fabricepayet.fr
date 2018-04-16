@@ -20,7 +20,7 @@ const TemplateWrapper = ({ children }) => (
         {
           name: 'description',
           content:
-            "Fabrice Payet est développeur depuis une dizaine d'années. Il a travaillé avec de nombreuses startups dans la validation et conception de leur produit.",
+            'Fabrice Payet est développeur freelance à la Réunion. Spécialisé dans les applications web et mobile, il a travaillé avec de nombreuses startups',
         },
         {
           name: 'keywords',

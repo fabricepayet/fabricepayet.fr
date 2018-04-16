@@ -1,6 +1,6 @@
 import Typography from 'typography'
-import deYoungTheme from 'typography-theme-de-young'
+import stowLakeTheme from 'typography-theme-stow-lake'
 
-const typography = new Typography(deYoungTheme)
+const typography = new Typography(stowLakeTheme)
 
 export default typography

@@ -15,8 +15,8 @@ const ResumeItemContainer = styled.div`
   img {
     margin-right: 24px;
     flex: none;
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
   }
 
   p {
