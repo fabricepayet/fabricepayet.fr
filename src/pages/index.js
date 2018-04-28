@@ -43,7 +43,7 @@ const IndexPage = () => (
         </a>.
         <p />
         <p>
-          Actuellement indépendant, je propose mes services pour{' '}
+          Actuellement en <a href="https://www.malt.fr/profile/fabricepayet" target="_blank">freelance</a>, je propose mes services pour{' '}
           <strong>la création d'application web & mobile</strong>, je suis
           disponible et à l'écoute de vos besoins, vous pouvez{' '}
           <Link to="/contact">me contacter</Link> pour en discuter.

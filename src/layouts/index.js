@@ -20,12 +20,12 @@ const TemplateWrapper = ({ children }) => (
         {
           name: 'description',
           content:
-            'Développeur freelance et indépendant basé a la Réunion, Fabrice Payet développe des applications web et mobile. Fullstack et spécialiste javascript, il intervient aussi bien sur le front end que sur le back end.',
+            'Fabrice Payet est développeur freelance et indépendant basé a la Réunion. Spécialiste des applications web & mobile, il a travaillé avec plusieurs startups à la Réunion.',
         },
         {
           name: 'keywords',
           content:
-            'fabrice, payet, développeur, freelance, réunion, javascript, application, mobile, web, meteorjs',
+            'fabrice, payet, développeur, freelance, réunion, javascript, application, mobile, web, meteorjs, startup',
         },
       ]}
     />
