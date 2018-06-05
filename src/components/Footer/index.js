@@ -23,7 +23,7 @@ const LinkContainer = styled.div`
 
 const InnerContainer = styled.div`
   margin: 0px auto;
-  max-width: 960px;
+  max-width: 1140px;
   padding: 0px 1.0875rem 1.45rem;
 
   form {

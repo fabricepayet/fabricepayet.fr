@@ -10,7 +10,7 @@ const ResumeContainer = styled.div`
 
 const InnerContainer = styled.div`
   margin: 0px auto;
-  max-width: 960px;
+  max-width: 1140px;
   padding: 0px 1.0875rem 1.45rem;
 `
 
@@ -18,7 +18,7 @@ const IndexPage = () => (
   <div>
     <InnerContainer>
       <ResumeContainer>
-        <p>
+        <p style={{ lineHeight: '30px' }}>
           Je suis <Link to="/">Fabrice Payet</Link>,{' '}
           <strong>développeur full stack</strong> passionné et vivant
           actuellement à{' '}
