@@ -11,22 +11,41 @@ const InnerContainer = styled.div`
 `
 
 const ResumeContainer = styled.div`
-  h2 {
-    border-bottom: 4px solid #d8d8d8;
-    padding: 0.2rem;
-    background-color: #e2e0e0;
-    padding-left: 24px;
-    border-radius: 6px;
-  }
+`
+
+const SectionTitle = styled.h2`
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 42px;
+  font-family: Roboto Mono,monospace;
+`
+
+const SectionSubTitle = styled.h2`
+  font-family: Roboto Mono,monospace;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #999;
+  margin-bottom: 40px;
+`
+
+const ResumeList = styled.div`
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
 `
 
 const ResumePage = () => (
   <InnerContainer>
     {/* <p>Mon parcours professionnel et mes formations</p> */}
     <ResumeContainer>
-      <div>
-        <h2>Work Experience</h2>
-        <div>
+      <SectionTitle>Resume</SectionTitle>
+      <ResumeList>
+        <SectionSubTitle>Work Experience</SectionSubTitle>
           <ResumeItem
             title="Scrum Master / Chef de projet"
             company="Ansamb"
@@ -59,7 +78,7 @@ const ResumePage = () => (
           />
           <ResumeItem
             title="Responsable des systèmes d’information"
-            company="SPLRMR"
+            company="SPL RMR"
             date="fév2014 - aout2014"
             description="Pilotage du système d’information
             Sélection, contrôle et suivi des prestataires
@@ -90,11 +109,9 @@ const ResumePage = () => (
             technologies="PHP, Python"
             companyLink="https://www.monext.eu/"
           />
-        </div>
-      </div>
-      <div>
-        <h2>Education</h2>
-        <div>
+      </ResumeList>
+      <ResumeList>
+        <SectionSubTitle>Education</SectionSubTitle>
           <ResumeItem
             title="Master professionnel Informatique, Informatique Avancée et Applications (I2A)"
             company="Université d'Aix - Marseille"
@@ -109,11 +126,9 @@ const ResumePage = () => (
             logo="universityreunion.jpg"
             companyLink="http://www.univ-reunion.fr/"
           />
-        </div>
-      </div>
-      <div>
-        <h2>Volunteering</h2>
-        <div>
+      </ResumeList>
+      <ResumeList>
+        <SectionSubTitle>Volunteering</SectionSubTitle>
           <ResumeItem
             title="Bénévole"
             company="Association Webcup"
@@ -128,8 +143,7 @@ const ResumePage = () => (
             logo="startupweekend.jpg"
             companyLink="https://startupweekend.org/"
           />
-        </div>
-      </div>
+      </ResumeList>
     </ResumeContainer>
   </InnerContainer>
 )

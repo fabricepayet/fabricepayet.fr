@@ -3,9 +3,42 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import { withPrefix } from 'gatsby-link'
 
+const Company = styled.span`
+  text-transform: uppercase;
+  color: #6d56c1;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Roboto Mono,monospace;
+  font-weight: 700;
+  padding-bottom: 5px;
+`
+
+const CompanyLink = styled.a`
+  text-transform: uppercase;
+  color: #6d56c1;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Roboto Mono,monospace;
+  font-weight: 700;
+  padding-bottom: 5px;
+`
+
 const ResumeItemContainer = styled.div`
   display: flex;
-  margin-bottom: 24px;
+  border-left: 2px solid #6d56c1;
+  padding-left: 25px;
+  padding-bottom: 50px;
+
+  &:before {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #6d56c1;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    background-color: #fff;
+    left: 10px;
+  }
 
   h3 {
     margin-bottom: 0.3rem;
@@ -15,13 +48,14 @@ const ResumeItemContainer = styled.div`
   img {
     margin-right: 24px;
     flex: none;
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 4px;
   }
 
   p {
-    margin-bottom: 0;
-    font-size: 0.9rem;
+    margin: 0;
   }
 `
 
@@ -32,7 +66,13 @@ const DateContainer = styled.span`
 
 const Techno = styled.div`
   font-size: 14px;
-  color: #dea43a;
+  font-family: Inconsolata,monospace;
+  text-transform: uppercase;
+`
+
+const Description = styled.p`
+  font-size: 0.8rem;
+  font-style: italic;
 `
 
 class ResumeItem extends Component {
@@ -44,22 +84,22 @@ class ResumeItem extends Component {
           alt={this.props.company}
         />
         <div>
-          <h3>{this.props.title}</h3>
           <div>
             {this.props.companyLink ? (
-              <a href={this.props.companyLink} target="_blank">
+              <CompanyLink href={this.props.companyLink} target="_blank">
                 {this.props.company}
-              </a>
+              </CompanyLink>
             ) : (
-              <span>{this.props.company}</span>
-            )}{' '}
+                <Company>{this.props.company}</Company>
+              )}{' '}
             {this.props.date && (
               <DateContainer>({this.props.date})</DateContainer>
             )}
           </div>
-          {this.props.description && <p>{this.props.description}</p>}
+          <p>{this.props.title}</p>
+          {this.props.description && <Description>{this.props.description}</Description>}
           {this.props.technologies && (
-            <Techno>{this.props.technologies}</Techno>
+            <Techno><i className="fa fa-wrench"></i> {this.props.technologies}</Techno>
           )}
         </div>
       </ResumeItemContainer>

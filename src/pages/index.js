@@ -14,10 +14,18 @@ const InnerContainer = styled.div`
   padding: 0px 1.0875rem 1.45rem;
 `
 
+const SectionTitle = styled.h2`
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 42px;
+  font-family: Roboto Mono,monospace;
+`
+
 const IndexPage = () => (
   <div>
     <InnerContainer>
       <ResumeContainer>
+        <SectionTitle>Bonjour,</SectionTitle>
         <p style={{ lineHeight: '30px' }}>
           Je suis <Link to="/">Fabrice Payet</Link>,{' '}
           <strong>développeur full stack</strong> passionné et vivant
