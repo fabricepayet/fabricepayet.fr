@@ -627,3 +627,17 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.menu.menu--active {
+  background-color: #fff;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .14);
+
+}
+
+.menu.menu--active a {
+  color: #555;
+}
+
+.menu.menu--active .menu__wrapper {
+  margin-top: 25px;
+}

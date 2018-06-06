@@ -31,11 +31,6 @@ module.exports = class HTML extends React.Component {
           />
           {this.props.headComponents}
           {css}
-          <script
-            defer
-            src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
-            crossorigin="anonymous"
-          />
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
@@ -44,6 +39,7 @@ module.exports = class HTML extends React.Component {
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
+
           {this.props.postBodyComponents}
         </body>
       </html>

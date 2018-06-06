@@ -5,7 +5,7 @@ import jump from 'jump.js';
 
 import Resume from '../components/Resume'
 
-const ResumeContainer = styled.div`
+const About = styled.div`
   a {
     text-decoration: none;
   }
@@ -16,7 +16,7 @@ const InnerContainer = styled.div`
   max-width: 1140px;
   padding: 60px 0;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1188px) {
     padding: 24px;
   }
 `
@@ -32,7 +32,7 @@ const SectionTitle = styled.h2`
 const IndexPage = () => (
   <div>
     <InnerContainer>
-      <ResumeContainer>
+      <About id="about">
         <SectionTitle>Bonjour,</SectionTitle>
         <p style={{ lineHeight: '30px' }}>
           Je suis <Link to="/">Fabrice Payet</Link>,{' '}
@@ -77,7 +77,7 @@ const IndexPage = () => (
           </a>{' '}
           ou simplement <Link to="/contact">me contacter</Link>.
         </p>
-      </ResumeContainer>
+      </About>
     </InnerContainer>
     <hr />
     <InnerContainer>
