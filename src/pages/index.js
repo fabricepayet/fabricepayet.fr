@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
+import Resume from '../components/Resume'
+
 const ResumeContainer = styled.div`
   a {
     text-decoration: none;
@@ -11,7 +13,11 @@ const ResumeContainer = styled.div`
 const InnerContainer = styled.div`
   margin: 0px auto;
   max-width: 1140px;
-  padding: 0px 1.0875rem 1.45rem;
+  padding: 60px 0;
+
+  @media screen and (max-width: 800px) {
+    padding: 24px;
+  }
 `
 
 const SectionTitle = styled.h2`
@@ -19,6 +25,7 @@ const SectionTitle = styled.h2`
   font-size: 36px;
   line-height: 42px;
   font-family: Roboto Mono,monospace;
+  font-weight: normal;
 `
 
 const IndexPage = () => (
@@ -70,6 +77,10 @@ const IndexPage = () => (
           ou simplement <Link to="/contact">me contacter</Link>.
         </p>
       </ResumeContainer>
+    </InnerContainer>
+    <hr />
+    <InnerContainer>
+      <Resume />
     </InnerContainer>
   </div>
 )

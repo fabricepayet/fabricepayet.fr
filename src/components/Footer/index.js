@@ -14,6 +14,7 @@ const FooterContainer = styled.div`
   color: #fff;
   z-index: 500;
   font-family: Roboto Mono, monospace;
+  padding: 24px;
 
   &:before {
     background: linear-gradient(54deg,rgba(74,76,179,.95) 34%,hsla(0,34%,71%,.95));
@@ -47,6 +48,10 @@ const FormContainer = styled.div`
   button {
     width: 100%;
   }
+
+  @media screen and (max-width: 800px) {
+    margin-top: 48px;
+  }
 `
 
 const SectionTitle = styled.h2`
@@ -79,6 +84,10 @@ const FooterRights = styled.div`
 
 const ContactFooterContainer = styled.div`
   display: flex;
+
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
 `
 
 const SocialContainer = styled.div`
@@ -116,7 +125,7 @@ const Footer = () => {
       <InnerContainer>
 
         <SectionTitle>Contactez moi</SectionTitle>
-        <ContactFooterContainer>
+        <ContactFooterContainer id="contact">
           <SocialContainer>
             <div>
               <dl>

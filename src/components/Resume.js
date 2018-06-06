@@ -1,14 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react';
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-import ResumeItem from '../components/ResumeItem/ResumeItem'
-
-const InnerContainer = styled.div`
-  margin: 0px auto;
-  max-width: 1140px;
-  padding: 0px 1.0875rem 1.45rem;
-`
+import ResumeItem from './ResumeItem/ResumeItem'
 
 const ResumeContainer = styled.div`
 `
@@ -18,6 +12,7 @@ const SectionTitle = styled.h2`
   font-size: 36px;
   line-height: 42px;
   font-family: Roboto Mono,monospace;
+  font-weight: normal;
 `
 
 const SectionSubTitle = styled.h2`
@@ -39,11 +34,11 @@ const ResumeList = styled.div`
   padding: 0 15px;
 `
 
-const ResumePage = () => (
-  <InnerContainer>
-    {/* <p>Mon parcours professionnel et mes formations</p> */}
-    <ResumeContainer>
-      <SectionTitle>Resume</SectionTitle>
+export default class Resume extends Component {
+  render() {
+    return (
+      <ResumeContainer id="resume">
+      <SectionTitle>Mon parcours professionnel</SectionTitle>
       <ResumeList>
         <SectionSubTitle>Work Experience</SectionSubTitle>
           <ResumeItem
@@ -62,7 +57,7 @@ const ResumePage = () => (
             title="Ingénieur Application"
             company="Ansamb"
             date="oct2014 - sept2016"
-            description="Développement du logiciel Places"
+            description="Développement de Places, suite de logiciels donnant aux utilisateurs le contrôle complet de leurs données tout en protégeant leur vie privée (échanges de fichiers, chat, vidéo conférence, ...)"
             logo="ansamb.jpg"
             technologies="Coffeescript, MeteorJs, NodeJs"
             companyLink="https://www.joinplaces.com/"
@@ -145,7 +140,7 @@ const ResumePage = () => (
           />
       </ResumeList>
     </ResumeContainer>
-  </InnerContainer>
-)
+    )
+  }
+};
 
-export default ResumePage

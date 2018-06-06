@@ -17,6 +17,11 @@ const ButtonStyled = styled.button`
   overflow: hidden;
   border: none!important;
   box-shadow: 0 1px 29px rgba(0,0,0,.16);
+
+  &:hover {
+    cursor: pointer;
+    background-color: #5d44b9;
+  }
 `
 
 class Button extends Component {

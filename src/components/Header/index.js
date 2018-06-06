@@ -117,19 +117,20 @@ const Header = () => (
         About
         </Link>
       <Link
-        to="/resume/"
+        to="#resume"
         activeStyle={{
           color: '#ddd',
         }}
+        onClick={(e) => { e.preventDefault(); jump('#resume'); }}
       >
         Expériences
         </Link>
       <Link
-        to="#main-footer"
+        to="#contact"
         activeStyle={{
           color: '#ddd',
         }}
-        onClick={(e) => { e.preventDefault(); jump('#main-footer'); }}
+        onClick={(e) => { e.preventDefault(); jump('#contact'); }}
       >
         Contact
         </Link>
