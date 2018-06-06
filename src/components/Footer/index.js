@@ -112,14 +112,14 @@ const MoreSocial = styled.div`
 
 const Footer = () => {
   return (
-    <FooterContainer>
+    <FooterContainer id="main-footer">
       <InnerContainer>
 
         <SectionTitle>Contactez moi</SectionTitle>
         <ContactFooterContainer>
           <SocialContainer>
-            <div class="contacts__list">
-              <dl class="contact-list">
+            <div>
+              <dl>
                 <dt>Téléphone:</dt>
                 <dd><a href="tel:+262692002669">0692 00 26 69</a></dd>
                 <dt>Skype:</dt>

@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import Photo from '../../images/photo.jpg'
+import jump from 'jump.js';
 
 const MainHeader = styled.div`
   border-bottom: 1px solid #ddd;
@@ -124,10 +125,11 @@ const Header = () => (
         Expériences
         </Link>
       <Link
-        to="/contact/"
+        to="#main-footer"
         activeStyle={{
           color: '#ddd',
         }}
+        onClick={(e) => { e.preventDefault(); jump('#main-footer'); }}
       >
         Contact
         </Link>
@@ -135,8 +137,6 @@ const Header = () => (
     <HeaderInner>
       <IdentityContainer>
         <img src={Photo} alt="Fabrice Payet" />
-        {/* <ImageContainer>
-        </ImageContainer> */}
         <div>
           <div style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '24px', lineHeight: '48px' }}>
             Fabrice Payet
