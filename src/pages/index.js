@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import jump from 'jump.js';
 
 import Resume from '../components/Resume'
 
@@ -39,7 +40,7 @@ const IndexPage = () => (
           actuellement à{' '}
           <a href="https://www.iledelareunion.net/" target="_blank">
             la Réunion
-          </a>. Durant <Link to="/resume/">mon parcours professionnel</Link>,
+          </a>. Durant <Link to="#resume" onClick={(e) => { e.preventDefault(); jump('#resume') }}>mon parcours professionnel</Link>,
           j'ai travaillé avec de nombreuses startups dans la création et la
           validation de leurs produits. Je sais aussi encadrer une équipe et
           organiser des cycles de développement en tant que{' '}

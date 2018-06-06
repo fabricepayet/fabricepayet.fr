@@ -114,7 +114,7 @@ const Header = () => (
           color: '#ddd',
         }}
       >
-        About
+        A propos
         </Link>
       <Link
         to="#resume"
