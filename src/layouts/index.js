@@ -15,17 +15,17 @@ const MainContainer = styled.div`
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Fabrice Payet: Freelance Full Stack Developer"
+      title="Fabrice Payet: Développeur Javascript en Freelance à la Réunion"
       meta={[
         {
           name: 'description',
           content:
-            'Fabrice Payet est développeur freelance et indépendant basé a la Réunion. Spécialiste des applications web & mobile, il a travaillé avec plusieurs startups à la Réunion.',
+            'Fabrice Payet est développeur Javascript actuellement en freelance. Il aide les startups et porteurs de projets dans la création de leur application web ou mobile.',
         },
         {
           name: 'keywords',
           content:
-            'fabrice, payet, développeur, freelance, réunion, javascript, application, mobile, web, meteorjs, startup',
+            'fabrice, payet, développeur, freelance, réunion, javascript, application, mobile, web, meteorjs, startup, fullstack',
         },
       ]}
     />

@@ -14,7 +14,6 @@ const FooterContainer = styled.div`
   color: #fff;
   z-index: 500;
   font-family: Roboto Mono, monospace;
-  padding: 24px;
 
   &:before {
     background: linear-gradient(54deg,rgba(74,76,179,.95) 34%,hsla(0,34%,71%,.95));
@@ -65,7 +64,7 @@ const SectionTitle = styled.h2`
 const InnerContainer = styled.div`
   margin: 0px auto;
   max-width: 1140px;
-  padding: 48px 0px;
+  padding: 48px 24px;
 
   form {
     margin-bottom: 0;
@@ -124,7 +123,7 @@ const Footer = () => {
     <FooterContainer id="main-footer">
       <InnerContainer>
 
-        <SectionTitle>Contactez moi</SectionTitle>
+        <SectionTitle>Contactez-moi</SectionTitle>
         <ContactFooterContainer id="contact">
           <SocialContainer>
             <div>

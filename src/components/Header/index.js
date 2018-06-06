@@ -144,7 +144,7 @@ const Header = () => (
           </div>
 
           <div style={{ fontSize: '24px' }}>
-            Développeur indépendant
+            Développeur Freelance
               </div>
         </div>
       </IdentityContainer>
