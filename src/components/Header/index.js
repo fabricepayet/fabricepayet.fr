@@ -71,7 +71,7 @@ const IdentityContainer = styled.div`
     justify-content: center;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1188px) {
     justify-content: center;
     padding-top: 24px;
     display: block;
@@ -104,6 +104,10 @@ const MenuContainer = styled.div`
     &:hover {
       opacity: 0.5;
     }
+  }
+
+  @media screen and (max-width: 1188px) {
+    padding-left: 24px;
   }
 `
 

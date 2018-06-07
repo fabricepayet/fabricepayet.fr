@@ -78,6 +78,11 @@ const FooterRights = styled.div`
 
   a {
     color: white;
+
+    &:hover,
+    &:active {
+      opacity: 0.5;
+    }
   }
 `
 
@@ -105,8 +110,12 @@ const SocialContainer = styled.div`
 
   a {
     color: white;
-  }
 
+    &:hover,
+    &:active {
+      opacity: 0.5;
+    }
+  }
   `
 
 const MoreSocial = styled.div`
