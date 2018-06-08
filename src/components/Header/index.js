@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styled from 'styled-components'
+import styled from 'styled-components';
 import Photo from '../../images/photo.jpg'
-import jump from 'jump.js';
+import MenuLinks from '../MenuLinks';
 
 const MainHeader = styled.div`
   border-bottom: 1px solid #ddd;
@@ -94,6 +94,7 @@ const MenuContainer = styled.div`
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: bold;
+  display: block;
 
   a {
     color: white;
@@ -107,44 +108,79 @@ const MenuContainer = styled.div`
   }
 
   @media screen and (max-width: 1188px) {
-    padding-left: 24px;
+    padding-left: 15px;
+    display: none;
   }
 `
 
 const NavContainer = styled.div`
-  width: 100%;
+width: 100%;
+position: fixed;
+padding: 0;
+top: 0;
+z-index: 160;
+width: 100%;
+height: 70px;
+transition: all .5s;
+
+`
+
+const MenuMobile = styled.div`
+  z-index: 1;
+  margin-top: 50px;
+  transition: all .3s;
+  padding: 0 15px;
+  display: none;
+
+  button {
+    color: #fff;
+    opacity: .5;
+    transition: all .3s;
+    background-color: transparent;
+    border: none;
+  }
+
+  @media screen and (max-width: 1188px) {
+    display: block;
+  }
+`
+
+const MobileMenuContainer = styled.div`
   position: fixed;
+  top: 20px;
+  left: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+  transition: all .3s ease;
   padding: 0;
-  top: 0;
-  z-index: 160;
-  width: 100%;
-  height: 70px;
-  transition: all .5s;
+  background-color: rgba(0,0,0,.8);
+  opacity: 0;
 `
 
 const Header = () => (
   <div>
     <NavContainer className="menu">
       <InnerContainer >
+        <MenuMobile className="menu__mobile">
+          <button type="button" className="menu__mobile-button">
+            <span><i className="fa fa-bars" aria-hidden="true"></i></span>
+          </button>
+        </MenuMobile>
+        <MobileMenuContainer className="mobile-menu">
+          <div style={{ width: '100%', padding: '15px 0' }}>
+            <div className="mobile-menu__close">
+              <span><i className="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+            <nav className="mobile-menu__wrapper">
+              <MenuLinks />
+            </nav>
+          </div>
+        </MobileMenuContainer>
         <MenuContainer className="menu__wrapper">
-          <Link
-            to="#about"
-            onClick={(e) => { e.preventDefault(); jump('#about'); }}
-          >
-            A propos
-          </Link>
-          <Link
-            to="#resume"
-            onClick={(e) => { e.preventDefault(); jump('#resume'); }}
-          >
-            Expériences
-          </Link>
-          <Link
-            to="#contact"
-            onClick={(e) => { e.preventDefault(); jump('#contact'); }}
-          >
-            Contact
-          </Link>
+          <MenuLinks />
         </MenuContainer>
       </InnerContainer>
     </NavContainer>

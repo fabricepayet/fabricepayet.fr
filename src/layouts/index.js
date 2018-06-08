@@ -20,6 +20,16 @@ class TemplateWrapper extends Component {
   }
 
   componentDidMount() {
+    //Open mobile menu
+    $('.menu__mobile-button, .mobile-menu__close').on('click', function () {
+      $('.mobile-menu').toggleClass('active');
+    });
+
+    //Close mobile menu after click
+    $('.mobile-menu__wrapper ul li a').on('click', function () {
+      $('.mobile-menu').removeClass('active');
+    });
+
     function fixedHeader() {
       var ww = $(window).scrollTop();
       if (ww > 0) {
@@ -32,7 +42,6 @@ class TemplateWrapper extends Component {
     }
     fixedHeader();
     $(window).on('scroll', function () {
-      console.log('ok!')
       fixedHeader();
     });
   }
