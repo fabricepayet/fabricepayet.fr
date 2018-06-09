@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { withPrefix } from 'gatsby-link'
+import { withPrefix } from 'gatsby-link';
+import ListTags from '../ListTags';
 
 const Company = styled.span`
   text-transform: uppercase;
@@ -64,15 +65,16 @@ const DateContainer = styled.span`
   color: #5d5d5d;
 `
 
-const Techno = styled.div`
-  font-size: 14px;
-  font-family: Inconsolata,monospace;
-  text-transform: uppercase;
-`
-
-const Description = styled.p`
+const Description = styled.ul`
   font-size: 0.8rem;
   font-style: italic;
+  list-style: none;
+  margin-left: 0;
+  line-height: 1.2rem;
+
+  li {
+    margin-bottom: 6px;
+  }
 `
 
 class ResumeItem extends Component {
@@ -85,8 +87,8 @@ class ResumeItem extends Component {
         />
         <div>
           <div>
-            {this.props.companyLink ? (
-              <CompanyLink href={this.props.companyLink} target="_blank">
+            {this.props.link ? (
+              <CompanyLink href={this.props.link} target="_blank">
                 {this.props.company}
               </CompanyLink>
             ) : (
@@ -97,9 +99,9 @@ class ResumeItem extends Component {
             )}
           </div>
           <p>{this.props.title}</p>
-          {this.props.description && <Description>{this.props.description}</Description>}
-          {this.props.technologies && (
-            <Techno><i className="fa fa-wrench"></i> {this.props.technologies}</Techno>
+          {this.props.description && <Description>{this.props.description.map(description => <li>{description}</li>)}</Description>}
+          {this.props.tags && (
+            <ListTags tags={this.props.tags}></ListTags>
           )}
         </div>
       </ResumeItemContainer>

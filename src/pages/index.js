@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import jump from 'jump.js';
 
 import Resume from '../components/Resume'
+import ProjectItem from '../components/ProjectItem';
 
 const About = styled.div`
   a {
@@ -28,6 +29,23 @@ const SectionTitle = styled.h2`
   font-family: Roboto Mono,monospace;
   font-weight: normal;
 `
+
+const projects = [
+  {
+    name: 'Shillerz',
+    image: 'shillerz-nobg.png',
+    description: 'Shillerz est le réseau social pour les amateurs de crypto monnaies, vous pouvez y partager vos prédictions du marché et suivre des influenceurs. J\'ai travaillé avec l\'équipe sur le paiement en crypto monnaie pour l\'achat de Shillcoins.',
+    tags: ['MeteorJs', 'React', 'Sass', 'crypto', 'coin'],
+    link: 'https://www.shillerz.com/',
+  },
+  {
+    name: 'Eloleo',
+    image: 'eloleo.png',
+    description: 'Eloleo vous offre le terroir directement dans votre poche, vous y trouverez tous vos fruits & légumes préférés produits par des producteurs de proximité',
+    tags: ['MeteorJs', 'Ionic', 'Mobile', 'geolocalisation'],
+    link: 'http://eloleo.fr/',
+  },
+]
 
 const IndexPage = () => (
   <div>
@@ -82,6 +100,11 @@ const IndexPage = () => (
     <hr />
     <InnerContainer>
       <Resume />
+    </InnerContainer>
+
+    <InnerContainer id="projects">
+      <SectionTitle>Mes projets récents</SectionTitle>
+      {projects.map(project => <ProjectItem name={project.name} image={project.image} description={project.description} tags={project.tags} link={project.link} />)}
     </InnerContainer>
   </div>
 )

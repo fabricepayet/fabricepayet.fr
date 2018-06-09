@@ -13,7 +13,6 @@ const MainContainer = styled.div`
   background-color: white;
 `
 
-
 class TemplateWrapper extends Component {
   constructor(props) {
     super(props);

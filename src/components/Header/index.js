@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components';
-import Photo from '../../images/photo.jpg'
+import Photo from '../../images/photo.jpg';
 import MenuLinks from '../MenuLinks';
 
 const MainHeader = styled.div`

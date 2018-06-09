@@ -35,6 +35,15 @@ export default class componentName extends Component {
 
         <li>
           <Link
+            to="#projects"
+            onClick={(e) => { e.preventDefault(); jump('#projects'); }}
+          >
+            Projets
+          </Link>
+        </li>
+
+        <li>
+          <Link
             to="#contact"
             onClick={(e) => { e.preventDefault(); jump('#contact'); }}
           >
