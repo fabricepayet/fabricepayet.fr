@@ -7,14 +7,6 @@ import ResumeItem from './ResumeItem/ResumeItem'
 const ResumeContainer = styled.div`
 `
 
-const SectionTitle = styled.h2`
-  margin-bottom: 40px;
-  font-size: 36px;
-  line-height: 42px;
-  font-family: Roboto Mono,monospace;
-  font-weight: normal;
-`
-
 const SectionSubTitle = styled.h2`
   font-family: Roboto Mono,monospace;
   font-size: 14px;
@@ -33,8 +25,6 @@ const ResumeList = styled.div`
   width: 100%;
   padding: 0 15px;
 `
-
-
 
 export default class Resume extends Component {
   render() {
@@ -117,8 +107,7 @@ export default class Resume extends Component {
       },
     ];
     return (
-      <ResumeContainer id="resume">
-        <SectionTitle>Mon parcours professionnel</SectionTitle>
+      <ResumeContainer>
         <ResumeList>
           <SectionSubTitle>Work Experience</SectionSubTitle>
           {experiencesPro.map(experience => <ResumeItem key={experience.title} title={experience.title}

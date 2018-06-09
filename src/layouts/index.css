@@ -727,3 +727,12 @@ pre tt:after {
 .menu.menu--active button {
   color: #555;
 }
+
+a {
+  transition: all .3s;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #6d56c1;
+}

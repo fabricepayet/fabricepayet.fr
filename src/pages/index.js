@@ -11,15 +11,12 @@ import Resume from '../components/Resume'
 import ProjectItem from '../components/ProjectItem';
 
 const About = styled.div`
-  a {
-    text-decoration: none;
-  }
 `
 
 const InnerContainer = styled.div`
   margin: 0px auto;
   max-width: 1140px;
-  padding: 60px 0;
+  padding: 74px 0;
 
   @media screen and (max-width: 1188px) {
     padding: 24px;
@@ -60,8 +57,8 @@ const projects = [
 
 const IndexPage = () => (
   <div>
-    <InnerContainer>
-      <About id="about">
+    <InnerContainer id="about">
+      <About>
         <SectionTitle>Bonjour,</SectionTitle>
         <p style={{ lineHeight: '30px' }}>
           Je suis <Link to="/">Fabrice Payet</Link>,{' '}
@@ -109,7 +106,8 @@ const IndexPage = () => (
       </About>
     </InnerContainer>
     <hr />
-    <InnerContainer>
+    <InnerContainer id="resume">
+      <SectionTitle>Mon parcours professionnel</SectionTitle>
       <Resume />
     </InnerContainer>
 

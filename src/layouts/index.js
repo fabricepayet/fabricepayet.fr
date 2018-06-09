@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 import './index.css'
 
 const MainContainer = styled.div`
-  padding-top: 104px;
+  padding-top: 24px;
   background-color: white;
 `
 
