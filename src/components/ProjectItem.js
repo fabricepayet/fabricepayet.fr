@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import ProjectImage from '../images/shillerz-nobg.png';
 import ListTags from './ListTags';
 
 const Project = styled.div`

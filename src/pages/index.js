@@ -4,7 +4,8 @@ import styled from 'styled-components'
 import jump from 'jump.js';
 
 import eloleoImage from '../images/eloleo.png';
-import shillerzImage from '../images/shillerz-nobg.png';
+import shillerzImage from '../images/shillerz.png';
+import mimopopImage from '../images/mimopop.png';
 
 import Resume from '../components/Resume'
 import ProjectItem from '../components/ProjectItem';
@@ -34,6 +35,13 @@ const SectionTitle = styled.h2`
 `
 
 const projects = [
+  {
+    name: 'Mimopop',
+    image: mimopopImage,
+    description: "Inspiré de la méthodologie Lean Startup, Mimopop vous permet de faire des études de marché de façon agile. Créer un questionnaire et profitez de l'intelligence collective pour amener votre projet vers le succès.",
+    tags: ['MeteorJs', 'React', 'Sass', 'Questionnaire', 'Lean Startup', 'Interview'],
+    link: 'http://www.mimopop.com/',
+  },
   {
     name: 'Shillerz',
     image: shillerzImage,
