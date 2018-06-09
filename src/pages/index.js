@@ -3,6 +3,9 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import jump from 'jump.js';
 
+import eloleoImage from '../images/eloleo.png';
+import shillerzImage from '../images/shillerz-nobg.png';
+
 import Resume from '../components/Resume'
 import ProjectItem from '../components/ProjectItem';
 
@@ -33,16 +36,16 @@ const SectionTitle = styled.h2`
 const projects = [
   {
     name: 'Shillerz',
-    image: 'shillerz-nobg.png',
+    image: shillerzImage,
     description: 'Shillerz est le réseau social pour les amateurs de crypto monnaies, vous pouvez y partager vos prédictions du marché et suivre des influenceurs. J\'ai travaillé avec l\'équipe sur le paiement en crypto monnaie pour l\'achat de Shillcoins.',
-    tags: ['MeteorJs', 'React', 'Sass', 'crypto', 'coin'],
+    tags: ['MeteorJs', 'React', 'Sass', 'Crypto', 'Coin'],
     link: 'https://www.shillerz.com/',
   },
   {
     name: 'Eloleo',
-    image: 'eloleo.png',
-    description: 'Eloleo vous offre le terroir directement dans votre poche, vous y trouverez tous vos fruits & légumes préférés produits par des producteurs de proximité',
-    tags: ['MeteorJs', 'Ionic', 'Mobile', 'geolocalisation'],
+    image: eloleoImage,
+    description: "Eloleo vous offre le terroir directement dans votre poche, vous y trouverez tous vos fruits & légumes préférés produits par des producteurs de proximité. J'ai aidé l'équipe d'Eloléo dans le développement de l'application mobile.",
+    tags: ['MeteorJs', 'Ionic', 'Mobile', 'Géoloc', 'Terroir'],
     link: 'http://eloleo.fr/',
   },
 ]
@@ -104,7 +107,7 @@ const IndexPage = () => (
 
     <InnerContainer id="projects">
       <SectionTitle>Mes projets récents</SectionTitle>
-      {projects.map(project => <ProjectItem name={project.name} image={project.image} description={project.description} tags={project.tags} link={project.link} />)}
+      {projects.map(project => <ProjectItem key={project.name} name={project.name} image={project.image} description={project.description} tags={project.tags} link={project.link} />)}
     </InnerContainer>
   </div>
 )

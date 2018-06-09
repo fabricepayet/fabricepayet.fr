@@ -75,15 +75,15 @@ export default class ProjectItem extends Component {
     return (
       <Project>
         <ImageContainer>
-          <img class="" src={this.props.image} alt="project-img" />
+          <img src={this.props.image} alt={this.props.name} />
         </ImageContainer>
         <Description>
-          <h3 class="project-card__title">{this.props.name}</h3>
-          <p class="project-card__description">
+          <h3>{this.props.name}</h3>
+          <p>
             {this.props.description}
           </p>
           <ListTags tags={this.props.tags} />
-          <a href={this.props.link} target="_blank" class="project-card__link">{this.props.link}</a>
+          <a href={this.props.link} target="_blank">{this.props.link}</a>
         </Description>
       </Project>
     );

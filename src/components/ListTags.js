@@ -22,7 +22,7 @@ export default class ListTags extends Component {
   render() {
     return (
       <List>
-        {this.props.tags.map(tag => <Tag>{tag}</Tag>)}
+        {this.props.tags.map(tag => <Tag key={tag}>{tag}</Tag>)}
       </List>
     )
   }

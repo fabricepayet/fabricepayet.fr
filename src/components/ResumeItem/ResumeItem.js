@@ -99,7 +99,7 @@ class ResumeItem extends Component {
             )}
           </div>
           <p>{this.props.title}</p>
-          {this.props.description && <Description>{this.props.description.map(description => <li>{description}</li>)}</Description>}
+          {this.props.description && <Description>{this.props.description.map(description => <li key={description}>{description}</li>)}</Description>}
           {this.props.tags && (
             <ListTags tags={this.props.tags}></ListTags>
           )}

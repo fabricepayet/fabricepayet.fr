@@ -121,7 +121,7 @@ export default class Resume extends Component {
         <SectionTitle>Mon parcours professionnel</SectionTitle>
         <ResumeList>
           <SectionSubTitle>Work Experience</SectionSubTitle>
-          {experiencesPro.map(experience => <ResumeItem title={experience.title}
+          {experiencesPro.map(experience => <ResumeItem key={experience.title} title={experience.title}
             company={experience.company} date={experience.date} description={experience.description} logo={experience.logo} link={experience.link} tags={experience.tags} />)}
         </ResumeList>
         <ResumeList>
