@@ -35,7 +35,7 @@ const projects = [
   {
     name: 'Mimopop',
     image: mimopopImage,
-    description: "Inspiré de la méthodologie Lean Startup, Mimopop vous permet de faire des études de marché de façon agile. Créer un questionnaire et profitez de l'intelligence collective pour amener votre projet vers le succès.",
+    description: "Inspiré de la méthodologie Lean Startup, Mimopop vous propose de faire des études de marché de façon agile. Créer un questionnaire et profitez de l'intelligence collective pour mener votre projet au succès.",
     tags: ['MeteorJs', 'React', 'Sass', 'Questionnaire', 'Lean Startup', 'Interview'],
     link: 'http://www.mimopop.com/',
   },
