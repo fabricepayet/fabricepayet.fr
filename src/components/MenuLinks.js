@@ -28,8 +28,8 @@ export default class componentName extends Component {
       return (
         <li>
           <Link
-            to={sectionIdentifier}
-            onClick={(e) => { e.preventDefault(); navigateTo('/'); setTimeout(function () { jump(sectionIdentifier); }, 800) }}
+            to={"/" + sectionIdentifier}
+            onClick={(e) => { e.preventDefault(); navigateTo('/'); setTimeout(function () { jump(sectionIdentifier); }, 500) }}
           >
             {sectionTitle}
           </Link>
