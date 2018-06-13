@@ -166,18 +166,18 @@ const Footer = () => {
               <input type="hidden" name="form-name" value="contact" />
 
               <div>
-                <input type="text" name="name" placeholder="Nom" />
+                <input type="text" name="name" placeholder="Nom" required />
               </div>
 
               <div>
-                <input type="email" name="email" placeholder="Email" />
+                <input type="email" name="email" placeholder="Email" required />
               </div>
               <div>
                 <textarea
                   name="message"
                   cols="30"
                   rows="10"
-                  placeholder="Message"
+                  placeholder="Message" required
                 />
               </div>
               <Button label="Envoyer" />
