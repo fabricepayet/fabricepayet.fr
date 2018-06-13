@@ -13,28 +13,30 @@ const Menu = styled.ul`
 
 export default class componentName extends Component {
   renderLinkSection(sectionIdentifier, sectionTitle) {
-    if (window.location.pathname === '/') {
-      return (
-        <li>
-          <Link
-            to={sectionIdentifier}
-            onClick={(e) => { e.preventDefault(); jump(sectionIdentifier); }}
-          >
-            {sectionTitle}
-          </Link>
-        </li>
-      )
-    } else {
-      return (
-        <li>
-          <Link
-            to={"/" + sectionIdentifier}
-            onClick={(e) => { e.preventDefault(); navigateTo('/'); setTimeout(function () { jump(sectionIdentifier); }, 500) }}
-          >
-            {sectionTitle}
-          </Link>
-        </li>
-      )
+    if (typeof window !== 'undefined') {
+      if (window.location.pathname === '/') {
+        return (
+          <li>
+            <Link
+              to={sectionIdentifier}
+              onClick={(e) => { e.preventDefault(); jump(sectionIdentifier); }}
+            >
+              {sectionTitle}
+            </Link>
+          </li>
+        )
+      } else {
+        return (
+          <li>
+            <Link
+              to={"/" + sectionIdentifier}
+              onClick={(e) => { e.preventDefault(); navigateTo('/'); setTimeout(function () { jump(sectionIdentifier); }, 500) }}
+            >
+              {sectionTitle}
+            </Link>
+          </li>
+        )
+      }
     }
   }
 
