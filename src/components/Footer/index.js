@@ -4,8 +4,8 @@ import styled from 'styled-components'
 import Button from '../Button'
 
 const FooterContainer = styled.div`
-  background: url(https://images.unsplash.com/reserve/oGLumRxPRmemKujIVuEG_LongExposure_i84.jpeg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=63998dad379975e2eb90bdf3b2c6f187&auto=format&fit=crop&w=1353&q=80);
   background-color: #6d56c1;
+  background-image: url(${props => props.bgImage});
   height: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -127,9 +127,9 @@ const MoreSocial = styled.div`
   }
 `
 
-const Footer = () => {
+const Footer = ({ data }) => {
   return (
-    <FooterContainer id="main-footer">
+    <FooterContainer id="main-footer" bgImage={data.bgFooter.sizes.src}>
       <InnerContainer>
 
         <SectionTitle>Contactez-moi</SectionTitle>

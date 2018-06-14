@@ -72,7 +72,7 @@ class TemplateWrapper extends Component {
         </Helmet>
         <Header data={this.props.data} />
         <MainContainer>{this.props.children()}</MainContainer>
-        <Footer />
+        <Footer data={this.props.data} />
       </div >
     )
   }
@@ -91,6 +91,16 @@ query LayoutQuery {
 	}
   profile: imageSharp(id: {regex: "/photo.jpg/"}) {
     sizes(maxWidth: 270) {
+      ...GatsbyImageSharpSizes
+    }
+  }
+  bgHeader: imageSharp(id: {regex: "/bg-header.jpg/"}) {
+    sizes(maxWidth: 1240) {
+      ...GatsbyImageSharpSizes
+    }
+  }
+  bgFooter: imageSharp(id: {regex: "/bg-footer.jpg/"}) {
+    sizes(maxWidth: 1240) {
       ...GatsbyImageSharpSizes
     }
   }

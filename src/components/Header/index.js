@@ -6,7 +6,7 @@ import Img from 'gatsby-image';
 
 const MainHeader = styled.div`
   border-bottom: 1px solid #ddd;
-  background-image: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=356407ef05a295cb49a302360f91fbde);
+  background-image: url(${props => props.bgImage});
   background-color: #6d56c1;
   height: 100%;
   background-repeat: no-repeat;
@@ -192,7 +192,7 @@ const Header = ({ data }) => (
         </MenuContainer>
       </InnerContainer>
     </NavContainer>
-    <MainHeader>
+    <MainHeader bgImage={data.bgHeader.sizes.src} >
       <HeaderInner>
         <IdentityContainer>
           <Img sizes={data.profile.sizes} alt="Photo Fabrice Payet" />
@@ -208,7 +208,7 @@ const Header = ({ data }) => (
         </IdentityContainer>
       </HeaderInner>
     </MainHeader>
-  </div>
+  </div >
 )
 
 export default Header
