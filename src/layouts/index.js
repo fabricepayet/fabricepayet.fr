@@ -69,7 +69,6 @@ class TemplateWrapper extends Component {
             src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
             crossorigin="anonymous"
           />
-          <link href="/styles/custom.css" rel="stylesheet" />
         </Helmet>
         <Header data={this.props.data} />
         <MainContainer>{this.props.children()}</MainContainer>
@@ -90,6 +89,11 @@ query LayoutQuery {
       title
     }
 	}
+  profile: imageSharp(id: {regex: "/photo.jpg/"}) {
+    sizes(maxWidth: 270) {
+      ...GatsbyImageSharpSizes
+    }
+  }
 }
 `
 

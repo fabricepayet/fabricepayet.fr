@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components';
-import Photo from '../../images/photo.jpg';
 import MenuLinks from '../MenuLinks';
+import Img from 'gatsby-image';
 
 const MainHeader = styled.div`
   border-bottom: 1px solid #ddd;
@@ -39,10 +39,6 @@ const HeaderInner = styled.div`
   flex-direction: row-reverse;
   max-width: 1140px;
   padding-top: 90px;
-  
-  @media screen and (max-width: 600px) {
-    // display: block;
-  }
 `
 
 const ImageContainer = styled.div`
@@ -58,11 +54,12 @@ const IdentityContainer = styled.div`
   align-items: center;
   color: white;
   
-  img {
+  .gatsby-image-outer-wrapper {
     margin-right: 50px;
     margin-bottom: 0;
     position: relative;
     top: 24px;
+    width: 270px;
   }
 
   div {
@@ -77,12 +74,19 @@ const IdentityContainer = styled.div`
     display: block;
     text-align: center;
     margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
 
-    img {
+    .gatsby-image-outer-wrapper {
       position: initial;
       z-index: 1000;
       margin-bottom: 24px;
       margin-right: 0px;
+      width: 270px;
+    }
+
+    .gatsby-image-wrapper {
+      bottom: 24px;
     }
   }
 `
@@ -160,6 +164,10 @@ const MobileMenuContainer = styled.div`
   opacity: 0;
 `
 
+const NameContainer = styled.div`
+  margin: 0 24px;
+`
+
 const Header = ({ data }) => (
   <div>
     <NavContainer className="menu">
@@ -187,8 +195,8 @@ const Header = ({ data }) => (
     <MainHeader>
       <HeaderInner>
         <IdentityContainer>
-          <img src={Photo} alt="Fabrice Payet" />
-          <div>
+          <Img sizes={data.profile.sizes} alt="Photo Fabrice Payet" />
+          <NameContainer>
             <div style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '24px', lineHeight: '48px' }}>
               Fabrice Payet
           </div>
@@ -196,7 +204,7 @@ const Header = ({ data }) => (
             <div style={{ fontSize: '24px' }}>
               {data.site.siteMetadata.title}
             </div>
-          </div>
+          </NameContainer>
         </IdentityContainer>
       </HeaderInner>
     </MainHeader>
