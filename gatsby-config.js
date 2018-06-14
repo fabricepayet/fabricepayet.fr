@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Fabrice Payet: Développeur Javascript en Freelance à la Réunion',
+    title: 'Développeur Javascript Freelance à la Réunion',
+    desc: 'Fabrice Payet est développeur Javascript actuellement en freelance. Il aide les startups et porteurs de projets dans la création de leur application web ou mobile.'
   },
   plugins: [
     'gatsby-plugin-react-helmet',

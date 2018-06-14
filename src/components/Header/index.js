@@ -160,7 +160,7 @@ const MobileMenuContainer = styled.div`
   opacity: 0;
 `
 
-const Header = () => (
+const Header = ({ data }) => (
   <div>
     <NavContainer className="menu">
       <InnerContainer >
@@ -194,8 +194,8 @@ const Header = () => (
           </div>
 
             <div style={{ fontSize: '24px' }}>
-              Développeur Freelance
-              </div>
+              {data.site.siteMetadata.title}
+            </div>
           </div>
         </IdentityContainer>
       </HeaderInner>

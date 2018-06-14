@@ -49,7 +49,7 @@ class TemplateWrapper extends Component {
     return (
       <div>
         <Helmet
-          title="Fabrice Payet: Développeur Javascript en Freelance à la Réunion"
+          title="Développeur Javascript Freelance à la Réunion"
           meta={[
             {
               name: 'description',
@@ -71,7 +71,7 @@ class TemplateWrapper extends Component {
           />
           <link href="/styles/custom.css" rel="stylesheet" />
         </Helmet>
-        <Header />
+        <Header data={this.props.data} />
         <MainContainer>{this.props.children()}</MainContainer>
         <Footer />
       </div >
@@ -82,5 +82,15 @@ class TemplateWrapper extends Component {
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
 }
+
+export const query = graphql`
+query LayoutQuery {
+	site {
+	  siteMetadata {
+      title
+    }
+	}
+}
+`
 
 export default TemplateWrapper
