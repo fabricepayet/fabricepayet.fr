@@ -9,6 +9,12 @@ import mimopopImage from '../images/mimopop.png';
 
 import Resume from '../components/Resume'
 import ProjectItem from '../components/ProjectItem';
+import Article from '../components/Article';
+
+
+const ArticleListing = styled.div`
+  display: flex;
+`
 
 const About = styled.div`
 `
@@ -55,7 +61,7 @@ const projects = [
   },
 ]
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <div>
     <InnerContainer id="about">
       <About>
@@ -115,7 +121,35 @@ const IndexPage = () => (
       <SectionTitle>Mes projets récents</SectionTitle>
       {projects.map(project => <ProjectItem key={project.name} name={project.name} image={project.image} description={project.description} tags={project.tags} link={project.link} />)}
     </InnerContainer>
+
+    {/* <InnerContainer>
+      <SectionTitle>Mes derniers articles</SectionTitle>
+      <ArticleListing>
+        {data.allMarkdownRemark.edges.map(({ node }) => (<Article article={node} key={node.id} />))}
+      </ArticleListing>
+    </InnerContainer> */}
   </div>
 )
+
+export const query = graphql`
+  query SiteMeta {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          html
+          frontmatter {
+            title
+            date(formatString: "DD/MM/YYYY")
+          }
+          excerpt(pruneLength: 180)
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
