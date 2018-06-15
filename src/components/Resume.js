@@ -52,7 +52,6 @@ export default class Resume extends Component {
         ],
         logo: 'ansamb.jpg',
         link: 'https://www.joinplaces.com/',
-        tags: ['Symfony', 'PHP', 'Javascript', 'AngularJs', 'Ionic'],
       },
 
       {
