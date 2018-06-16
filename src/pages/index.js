@@ -94,7 +94,7 @@ const IndexPage = ({ data }) => (
           Actuellement en <a href="https://www.malt.fr/profile/fabricepayet" target="_blank">freelance</a>, je propose mes services pour{' '}
           <strong>la création d'application web & mobile</strong>, je suis
           disponible et à l'écoute de vos besoins, vous pouvez{' '}
-          <Link to="/contact">me contacter</Link> pour en discuter.
+          <Link to="/contact" onClick={(e) => { e.preventDefault(); jump('#contact') }}>me contacter</Link> pour en discuter.
         </p>
         <p>
           Vous pouvez{' '}
@@ -107,7 +107,7 @@ const IndexPage = ({ data }) => (
           <a href="https://github.com/fpayet" target="_blank">
             voir mon code
           </a>{' '}
-          ou simplement <Link to="/contact">me contacter</Link>.
+          ou simplement <Link to="/contact" onClick={(e) => { e.preventDefault(); jump('#contact') }}>me contacter</Link>.
         </p>
       </About>
     </InnerContainer>
