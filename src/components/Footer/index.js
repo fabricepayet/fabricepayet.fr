@@ -12,7 +12,7 @@ const FooterContainer = styled.div`
   background-size: cover;
   position: relative;
   color: #fff;
-  z-index: 500;
+  z-index: 160;
   font-family: Roboto Mono, monospace;
 
   &:before {
