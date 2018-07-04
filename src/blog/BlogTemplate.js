@@ -17,11 +17,12 @@ const ArticleContainer = styled.div`
     font-weight: 700;
     margin-top: 30px;
     margin-bottom: 15px;
-    font-size: 26px;
+    font-size: 22px;
   }
 
   h3 {
     font-family: "Roboto Mono", monospace;
+    font-size: 20px;
   }
 
   @media screen and (max-width: 1188px) {
