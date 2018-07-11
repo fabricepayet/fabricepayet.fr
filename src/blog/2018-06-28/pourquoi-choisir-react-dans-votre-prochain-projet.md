@@ -14,7 +14,7 @@ Depuis sa publication en 2013, React a connu une forte croissance et est devenue
 React a été pensé pour la performance, la librairie introduit le concept de DOM virtuel, c'est en fait un objet javascript qui va être manipuler à place du DOM et ainsi permettre des changements plus rapide et moins couteux. React ne mettra à jour que les élements du DOM qui ont réellement changés.
 Concernant la scalabilité, React a déja fait ses preuves depuis des années avec de grosse applications en production comme Facebook, Netflix, Airbnb, Yahoo ...
 
-### L'approche composants
+### L'approche composant
 React incite les développeurs à découper leurs applications en élements réutilisables et modulaires, c'est ce qu'on appelle les composants. Chaque composant agit comme une machine à état avec ses propres propriétés et ses propres états. Le fait d'utiliser des composants permet une grande réutilisation et une meilleure portabilité. Au lieu de développer une nouvelle fois le comportement d'un élément graphique, la réutilisation d'un composant permet un gain de temps non négligeable. Cela permet aussi une meilleure indépendance des éléments et offre même la possibilité de les exporter sur des nouveaux projets. On trouve aujourd'hui de nombreuses librairies de composants complets et testés, il est donc plus rapide et efficace d'utiliser ses librairies déja approuvées et testées.
 
 

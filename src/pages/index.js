@@ -122,18 +122,21 @@ const IndexPage = ({ data }) => (
       {projects.map(project => <ProjectItem key={project.name} name={project.name} image={project.image} description={project.description} tags={project.tags} link={project.link} />)}
     </InnerContainer>
 
-    {/* <InnerContainer>
+    <InnerContainer>
       <SectionTitle>Mes derniers articles</SectionTitle>
       <ArticleListing>
         {data.allMarkdownRemark.edges.map(({ node }) => (<Article article={node} key={node.id} />))}
       </ArticleListing>
-    </InnerContainer> */}
+    </InnerContainer>
   </div>
 )
 
 export const query = graphql`
   query SiteMeta {
-    allMarkdownRemark {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 3
+    ) {
       edges {
         node {
           id
