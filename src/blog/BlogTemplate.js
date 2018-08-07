@@ -21,8 +21,8 @@ const ArticleContainer = styled.div`
   }
 
   h3 {
-    font-family: "Roboto Mono", monospace;
-    font-size: 20px;
+    font-family: Roboto, monospace;
+    font-size: 18px;
   }
 
   @media screen and (max-width: 1188px) {

@@ -9,6 +9,8 @@ React est une librairie cliente permettant de développer des interfaces utilisa
 
 Depuis sa publication en 2013, React a connu une forte croissance et est devenue la bibliothèque cliente la plus appréciée par les développeurs. Soutenue par Facebook, une trés grosse communauté s'est formé autour de React et de plus en plus de développeurs se forment sur cette technologie. Il est aujourd'hui plutôt facile de trouver des développeurs compétants sur React et l'interêt pour cette technologie ne fait qu'augmenter.
 
+![React Most Loved](/images/blog/react-most-loved.png)
+
 ### La performance et la scalabilité
 
 React a été pensé pour la performance, la librairie introduit le concept de DOM virtuel, c'est en fait un objet javascript qui va être manipuler à place du DOM et ainsi permettre des changements plus rapide et moins couteux. React ne mettra à jour que les élements du DOM qui ont réellement changés.
