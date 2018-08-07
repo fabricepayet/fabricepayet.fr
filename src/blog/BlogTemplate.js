@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
+import ReactDisqusThread from 'react-disqus-thread';
 
 const ArticleContainer = styled.div`
   background-color: #fff;
@@ -69,6 +70,12 @@ export default class BlogTemplate extends Component {
         <div dangerouslySetInnerHTML={{
           __html: data.markdownRemark.html
         }} />
+        <ReactDisqusThread
+          shortname="fabricepayetfr"
+          identifier={data.markdownRemark.fields.slug}
+          title={data.markdownRemark.frontmatter.title}
+          url={`https://fabricepayet.fr/${data.markdownRemark.fields.slug}`}
+        />
       </ArticleContainer>
     )
   }
@@ -86,6 +93,9 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "DD/MM/YYYY")
+      }
+      fields {
+        slug
       }
     }
   }
