@@ -19,6 +19,19 @@ const ArticleContainer = styled.div`
     margin-top: 30px;
     margin-bottom: 15px;
     font-size: 22px;
+    letter-spacing: -1px;
+  }
+
+  blockquote {
+    border-left: 0.25em solid #dfe2e5;
+    padding-left: 16px;
+    margin: 2rem;
+
+    p {
+      margin-bottom: 0;
+      font-size: 1.1rem;
+      font-style: italic;
+    }
   }
 
   h3 {
