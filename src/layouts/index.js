@@ -49,12 +49,12 @@ class TemplateWrapper extends Component {
     return (
       <div>
         <Helmet
-          title="Développeur Javascript Freelance à la Réunion"
+          title="Développeur Full Stack Freelance à la Réunion"
           meta={[
             {
               name: 'description',
               content:
-                'Fabrice Payet est développeur Javascript actuellement en freelance. Il aide les startups et porteurs de projets dans la création de leur application web ou mobile.',
+                'Fabrice Payet est développeur d\'applications actuellement en Freelance. Il aide les porteurs de projet dans la réalisation de leur projet Web ou Mobile.',
             },
             {
               name: 'keywords',
