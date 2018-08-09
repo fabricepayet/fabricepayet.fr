@@ -14,6 +14,11 @@ import Article from '../components/Article';
 
 const ArticleListing = styled.div`
   display: flex;
+  padding-bottom: 24px;
+
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
 `
 
 const About = styled.div`
@@ -35,6 +40,10 @@ const SectionTitle = styled.h2`
   line-height: 42px;
   font-family: Roboto Mono,monospace;
   font-weight: normal;
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: 24px;
+  }
 `
 
 const projects = [

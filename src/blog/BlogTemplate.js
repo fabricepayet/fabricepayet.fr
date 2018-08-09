@@ -41,6 +41,7 @@ const ArticleContainer = styled.div`
 
   @media screen and (max-width: 1188px) {
     margin: 0 24px;
+    padding: 24px 0;
   }
 `
 

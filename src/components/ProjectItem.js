@@ -3,15 +3,15 @@ import styled from 'styled-components';
 import ListTags from './ListTags';
 
 const Project = styled.div`
-display: flex;
-margin-left: 0;
-margin-bottom: 40px;
-transition: box-shadow .3s;
-margin-right: 0;
+  display: flex;
+  margin-left: 0;
+  margin-bottom: 40px;
+  transition: box-shadow .3s;
+  margin-right: 0;
 
-@media screen and (max-width: 768px) {
-  display: block;
-}
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 `
 
 const ImageContainer = styled.div`
@@ -34,6 +34,10 @@ const Description = styled.div`
   width: 100%;
   min-height: 1px;
   overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    padding: 24px;
+  }
 
   h3 {
     font-size: 18px;

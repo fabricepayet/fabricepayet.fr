@@ -4,9 +4,12 @@ import styled from 'styled-components';
 
 const ArticleStyled = styled.article`
   flex: 0 0 33.33333%;
-  max-width: 33.33333%;
   border: 1px solid #f1f1f1;
   padding: 20px 40px 40px 20px;
+
+  @media screen and (max-width: 800px) {
+    padding-bottom: 0;
+  }
 
   &:hover {
     cursor: pointer;
