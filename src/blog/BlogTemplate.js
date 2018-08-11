@@ -43,6 +43,11 @@ const ArticleContainer = styled.div`
     margin: 0 24px;
     padding: 24px 0;
   }
+
+  @media screen and (max-width: 800px) {
+    margin: 0;
+    padding: 24px 24px 0 24px;
+  }
 `
 
 const BackContainer = styled.div`

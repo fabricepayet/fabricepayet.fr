@@ -9,10 +9,8 @@ import Footer from '../components/Footer'
 import './index.css'
 
 const MainContainer = styled.div`
-  padding-top: 24px;
   background-color: white;
 `
-
 class TemplateWrapper extends Component {
   constructor(props) {
     super(props);
@@ -70,8 +68,7 @@ class TemplateWrapper extends Component {
             crossorigin="anonymous"
           />
         </Helmet>
-        <Header data={this.props.data} />
-        <MainContainer>{this.props.children()}</MainContainer>
+        <MainContainer data={this.props.data}>{this.props.children()}</MainContainer>
         <Footer data={this.props.data} />
       </div >
     )
@@ -84,21 +81,6 @@ TemplateWrapper.propTypes = {
 
 export const query = graphql`
 query LayoutQuery {
-	site {
-	  siteMetadata {
-      title
-    }
-	}
-  profile: imageSharp(id: {regex: "/photo.jpg/"}) {
-    sizes(maxWidth: 270) {
-      ...GatsbyImageSharpSizes
-    }
-  }
-  bgHeader: imageSharp(id: {regex: "/bg-header.jpg/"}) {
-    sizes(maxWidth: 1240) {
-      ...GatsbyImageSharpSizes
-    }
-  }
   bgFooter: imageSharp(id: {regex: "/bg-footer.jpg/"}) {
     sizes(maxWidth: 1240) {
       ...GatsbyImageSharpSizes

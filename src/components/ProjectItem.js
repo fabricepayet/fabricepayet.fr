@@ -23,7 +23,6 @@ const ImageContainer = styled.div`
     height: 100%;
     object-fit: cover;
   }
-
   `
 
 const Description = styled.div`

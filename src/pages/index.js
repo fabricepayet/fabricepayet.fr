@@ -10,6 +10,7 @@ import mimopopImage from '../images/mimopop.png';
 import Resume from '../components/Resume'
 import ProjectItem from '../components/ProjectItem';
 import Article from '../components/Article';
+import Header from '../components/Header';
 
 
 const ArticleListing = styled.div`
@@ -43,6 +44,7 @@ const SectionTitle = styled.h2`
 
   @media screen and (max-width: 800px) {
     margin-bottom: 24px;
+    font-size: 28px;
   }
 `
 
@@ -72,6 +74,7 @@ const projects = [
 
 const IndexPage = ({ data }) => (
   <div>
+    <Header data={data} />
     <InnerContainer id="about">
       <About>
         <SectionTitle>Bonjour,</SectionTitle>
@@ -159,6 +162,21 @@ export const query = graphql`
             slug
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    bgHeader: imageSharp(id: {regex: "/bg-header.jpg/"}) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    profile: imageSharp(id: {regex: "/photo.jpg/"}) {
+      sizes(maxWidth: 270) {
+        ...GatsbyImageSharpSizes
       }
     }
   }

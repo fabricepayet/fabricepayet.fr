@@ -8,7 +8,8 @@ const ArticleStyled = styled.article`
   padding: 20px 40px 40px 20px;
 
   @media screen and (max-width: 800px) {
-    padding-bottom: 0;
+    padding-bottom: 20px;
+    margin-bottom: 6px;
   }
 
   &:hover {
