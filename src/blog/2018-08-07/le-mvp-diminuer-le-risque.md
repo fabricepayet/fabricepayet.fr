@@ -1,5 +1,5 @@
 ---
-title: "Le MVP : diminuer le risque"
+title: "Diminuer le risque avec un MVP"
 date: "2018-08-07"
 ---
 
@@ -9,7 +9,7 @@ date: "2018-08-07"
 
 90% des startups échouent sans savoir quelles sont les erreurs qu'elles ont faite. Créer une startup est une entreprise risquée et trop de "startup" construisent des produits dont personne ne veut. C'est dans ce cadre que la méthode Lean Startup a été inventé par [Eris Ries](https://en.wikipedia.org/wiki/Eric_Ries) (fortement inspiré des méthodes Lean de Toyota). Elle introduit le concept d'apprentissage validé et encourage les startups à formuler les hypothèses critiques qui conditionnent la réussite de leur projet. Ainsi chaque hypothèse identifiée doit être testé de façon scientifique, dans le but d'obtenir des données concrètes.
 
-Contrairement aux grosses entreprises traditionnelles, les startups ne disposent ni de beaucoup de temps et ni gros budget et l'échec est souvent synonyme de mort pour la startup. Il faut donc réussir à vérifier ses hypothèses de marché rapidement et avec peu de moyens, c'est ce que permet le MVP. Le MVP est la première version de votre produit construit dans le but de vérifier une hypothèse spécifique. Le MVP doit permettre de récolter du feedback, d'attirer les premiers utilisateurs et surtout de savoir si on doit continuer, pivoter ou simplement abandonner. Le MVP est un processus d'apprentissage client, il ne sert ni à détecter les problèmes de conception, ni technologique, ni de mise à l'échelle.
+Contrairement aux grosses entreprises traditionnelles, les startups ne disposent ni de beaucoup de temps et ni gros budget et l'échec est souvent synonyme de mort pour la startup. Il faut donc réussir à vérifier ses hypothèses de marché rapidement et avec peu de moyens, c'est ce que permet le MVP (Produit Minimum Viable). Le MVP est la première expérience construite dans le but de vérifier une hypothèse de marché spécifique. Le MVP doit permettre de récolter du feedback, d'attirer les premiers utilisateurs et surtout de savoir si on doit continuer, pivoter ou simplement abandonner. Le MVP est un processus d'apprentissage client, il ne sert ni à détecter les problèmes de conception, ni technologique, ni de mise à l'échelle.
 
 ![MVP's cycle](/images/blog/mvp-cycle.jpg)
 
