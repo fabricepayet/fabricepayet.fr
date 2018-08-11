@@ -127,7 +127,6 @@ z-index: 160;
 width: 100%;
 height: 70px;
 transition: all .5s;
-
 `
 
 const MenuMobile = styled.div`
@@ -175,7 +174,7 @@ const Header = ({ data }) => (
       <InnerContainer >
         <MenuMobile className="menu__mobile">
           <button type="button" className="menu__mobile-button">
-            <span><i className="fa fa-bars" aria-hidden="true"></i></span>
+            <span style={{ outline: 'none' }}><i className="fa fa-bars" aria-hidden="true"></i></span>
           </button>
         </MenuMobile>
         <MobileMenuContainer className="mobile-menu">
