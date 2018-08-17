@@ -9,10 +9,11 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-robots-txt',
     'gatsby-transformer-remark',
     {
       resolve: 'gatsby-plugin-sitemap',
-      option: {
+      options: {
         exclude: ['/success/'],
       }
     },
