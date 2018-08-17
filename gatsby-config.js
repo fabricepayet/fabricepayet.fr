@@ -11,7 +11,10 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-remark',
     {
-      resolve: `gatsby-plugin-sitemap`,
+      resolve: 'gatsby-plugin-sitemap',
+      option: {
+        exclude: ['/success/'],
+      }
     },
     {
       resolve: 'gatsby-source-filesystem',
