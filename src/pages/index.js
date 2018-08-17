@@ -12,7 +12,6 @@ import ProjectItem from '../components/ProjectItem';
 import Article from '../components/Article';
 import Header from '../components/Header';
 
-
 const ArticleListing = styled.div`
   display: flex;
   padding-bottom: 24px;
@@ -144,7 +143,7 @@ const IndexPage = ({ data }) => (
 )
 
 export const query = graphql`
-  query SiteMeta {
+  query BlogQuery {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 3

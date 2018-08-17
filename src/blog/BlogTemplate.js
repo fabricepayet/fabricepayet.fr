@@ -82,7 +82,7 @@ export default class BlogTemplate extends Component {
     return (
       <ArticleContainer>
         <BackContainer>
-          <Link to="/"><i className="fa fa-arrow-left"></i> Retour</Link>
+          <Link to="/blog"><i className="fa fa-arrow-left"></i> Retour</Link>
         </BackContainer>
         <h2>{data.markdownRemark.frontmatter.title}</h2>
         <Date>{data.markdownRemark.frontmatter.date}</Date>

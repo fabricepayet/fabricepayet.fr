@@ -14,7 +14,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
-        exclude: ['/success/'],
+        exclude: ['https://fabricepayet.fr/success/'],
       }
     },
     {
