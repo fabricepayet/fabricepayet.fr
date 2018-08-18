@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     siteUrl: `https://fabricepayet.fr`,
     title: 'Développeur Javascript Freelance à la Réunion',
-    desc: 'Fabrice Payet est développeur Javascript actuellement en freelance. Il aide les startups et porteurs de projets dans la création de leur application web ou mobile.'
+    desc: 'Fabrice Payet est développeur Javascript actuellement en freelance. Il aide les startups et porteurs de projets dans la création de leur application web ou mobile.',
+    description: 'Fabrice Payet est développeur Javascript actuellement en freelance. Il aide les startups et porteurs de projets dans la création de leur application web ou mobile.'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -11,6 +12,9 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-robots-txt',
     'gatsby-transformer-remark',
+    {
+      resolve: `gatsby-plugin-feed`
+    },
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
