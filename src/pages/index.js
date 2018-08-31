@@ -52,21 +52,21 @@ const projects = [
     name: 'Mimopop',
     image: mimopopImage,
     description: "Inspiré de la méthodologie Lean Startup, Mimopop vous propose de faire des études de marché de façon agile. Créer un questionnaire et profitez de l'intelligence collective pour mener votre projet au succès.",
-    tags: ['MeteorJs', 'React', 'Sass', 'Questionnaire', 'Lean Startup', 'Interview'],
+    tags: ['MeteorJs', 'React', 'Sass', 'Questionnaire', 'Lean Startup', 'Interview', 'Feedback', 'Intelligence Collective'],
     link: 'http://www.mimopop.com/',
   },
   {
     name: 'Shillerz',
     image: shillerzImage,
     description: 'Shillerz est le réseau social pour les amateurs de crypto monnaies, vous pouvez y partager vos prédictions du marché et suivre des influenceurs. J\'ai travaillé avec l\'équipe sur le paiement en crypto monnaie pour l\'achat de Shillcoins.',
-    tags: ['MeteorJs', 'React', 'Sass', 'Crypto', 'Coin'],
+    tags: ['MeteorJs', 'React', 'Sass', 'Crypto', 'Coin', 'Bitcoin', 'Trading', 'Spéculation', 'Signal'],
     link: 'https://www.shillerz.com/',
   },
   {
     name: 'Eloleo',
     image: eloleoImage,
     description: "Eloleo vous offre le terroir directement dans votre poche, vous y trouverez tous vos fruits & légumes préférés produits par des producteurs de proximité. J'ai aidé l'équipe d'Eloléo dans le développement de l'application mobile.",
-    tags: ['MeteorJs', 'Ionic', 'Mobile', 'Géoloc', 'Terroir'],
+    tags: ['MeteorJs', 'Ionic', 'Mobile', 'Géoloc', 'Local', 'Fruits', 'Légumes', 'Bio', 'Agriculture'],
     link: 'http://eloleo.fr/',
   },
 ]
@@ -155,6 +155,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD/MM/YYYY")
+            cover
           }
           excerpt(pruneLength: 180)
           fields {

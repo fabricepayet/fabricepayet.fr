@@ -1,6 +1,7 @@
 ---
 title: "3 applications que j'utilise tous les jours"
 date: "2018-07-11"
+cover: /images/blog/duolingo.png
 ---
 
 Aujourd'hui je vous présente 3 applications mobile que j'utilise au quotidien. Je les utilise dans le but d'améliorer mes compétences mais aussi d'être plus performant.

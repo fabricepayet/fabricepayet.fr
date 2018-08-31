@@ -48,6 +48,9 @@ export default class Article extends Component {
     const { article } = this.props;
     return (
       <ArticleStyled onClick={() => { navigateTo(article.fields.slug) }}>
+        <div style={{ maxHeight: '180px', overflow: 'hidden' }}>
+          <img src={article.frontmatter.cover} alt={`article cover`} />
+        </div>
         <Date>{article.frontmatter.date}</Date>
         <Link to={article.fields.slug}>
           <h3>{article.frontmatter.title}</h3>

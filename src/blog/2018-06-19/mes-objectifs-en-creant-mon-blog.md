@@ -1,6 +1,7 @@
 ---
 title: "Mes objectifs en créant mon blog"
 date: "2018-06-19"
+cover: /images/blog/react-most-loved.png
 ---
 
 Bonjour, oui j'ai décidé de créé mon blog ! Il y a un moment que j'y pensé mais je n'ai jamais eu le temps et le courage de me lancer.

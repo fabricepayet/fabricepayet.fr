@@ -1,6 +1,7 @@
 ---
 title: "Diminuer le risque avec un MVP"
 date: "2018-08-07"
+cover: /images/blog/mvp-cycle.jpg
 ---
 
 > La vie est trop courte pour construire un produit dont personne de veut.
