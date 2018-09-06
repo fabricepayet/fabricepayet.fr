@@ -47,17 +47,17 @@ class TemplateWrapper extends Component {
     return (
       <div>
         <Helmet
-          title="Développeur Full Stack Freelance à la Réunion"
+          title="Développeur d'application Web et Mobile en Freelance à la Réunion"
           meta={[
             {
               name: 'description',
               content:
-                'Fabrice Payet est développeur d\'applications actuellement en Freelance. Il aide les porteurs de projet dans la réalisation de leur projet Web ou Mobile.',
+                'Fabrice Payet est développeur Freelance spécialisé dans la création d\'application Web & Mobile. Il peut vous aider dans la création de votre produit. Ses technos préférés sont React, Meteorjs, Ionic, Nodejs.',
             },
             {
               name: 'keywords',
               content:
-                'fabrice, payet, développeur, freelance, réunion, javascript, application, mobile, web, meteorjs, startup, fullstack',
+                'fabrice, payet, développeur, freelance, réunion, react, application, mobile, web, meteorjs, startup, fullstack',
             },
           ]}
         >
