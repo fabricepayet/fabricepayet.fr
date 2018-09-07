@@ -1,5 +1,5 @@
 ---
-title: "Qu'est q'une progressive web app (PWA) ?"
+title: "Qu'est qu'une progressive web app (PWA) ?"
 date: "2018-08-31"
 cover: /images/blog/pwa-install.jpg
 ---
