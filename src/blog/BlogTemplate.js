@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
 import ReactDisqusThread from 'react-disqus-thread';
 
 const ArticleContainer = styled.div`
@@ -81,6 +82,10 @@ export default class BlogTemplate extends Component {
     const { data } = this.props;
     return (
       <ArticleContainer>
+        <Helmet>
+          <title>{data.markdownRemark.frontmatter.title}</title>
+          <meta name="description" content={data.markdownRemark.excerpt} />
+        </Helmet>
         <BackContainer>
           <Link to="/blog"><i className="fa fa-arrow-left"></i> Retour</Link>
         </BackContainer>
@@ -116,6 +121,7 @@ export const query = graphql`
       fields {
         slug
       }
+      excerpt(pruneLength: 230)
     }
   }
 `
