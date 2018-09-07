@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import Header from '../components/Header';
+import Article from '../components/Article';
 
 const InnerContainer = styled.div`
   margin: 0px auto;
@@ -30,18 +31,8 @@ const BlogPage = ({ data }) => (
     <Header data={data} />
     <InnerContainer id="blog">
       <SectionTitle>Mes articles</SectionTitle>
-      <div>
-        <ul>
-          {
-            data.allMarkdownRemark.edges.map(({ node }) => {
-              return (
-                <li>
-                  <a href={node.fields.slug}>{node.frontmatter.date} - {node.frontmatter.title}</a>
-                </li>
-              );
-            })
-          }
-        </ul>
+      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+        {data.allMarkdownRemark.edges.map(({ node }) => (<Article article={node} key={node.id} />))}
       </div>
     </InnerContainer>
   </div>
@@ -60,6 +51,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD/MM/YYYY")
+            cover
           }
           excerpt(pruneLength: 180)
           fields {

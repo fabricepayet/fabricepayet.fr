@@ -49,7 +49,7 @@ export default class Article extends Component {
     return (
       <ArticleStyled onClick={() => { navigateTo(article.fields.slug) }}>
         <div style={{ maxHeight: '180px', overflow: 'hidden' }}>
-          <img src={article.frontmatter.cover} alt={`article cover`} />
+          <img src={article.frontmatter.cover} alt={`cover`} />
         </div>
         <Date>{article.frontmatter.date}</Date>
         <Link to={article.fields.slug}>
