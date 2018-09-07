@@ -6,6 +6,7 @@ const ArticleStyled = styled.article`
   flex: 0 0 33.33333%;
   border: 1px solid #f1f1f1;
   padding: 20px 40px 40px 20px;
+  min-width: 300px;
 
   @media screen and (max-width: 800px) {
     padding-bottom: 20px;
