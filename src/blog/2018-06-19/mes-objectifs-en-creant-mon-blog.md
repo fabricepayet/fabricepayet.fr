@@ -22,7 +22,7 @@ J'aime lire et apprendre de nouvelles choses, je vais essayer de m'inspirer de m
 ### Développer mon réseau professionnel
 
 Ecrire des articles, me permettra aussi d'augmenter le nombre de visites sur mon site, notamment avec le référencement SEO, et ainsi augmenter ma visibilité.
-C'est aussi un bon moyen pour moi d'être en contact direct avec mes futurs collaborateurs, associés ou prospects qui pourront suivre le contenu qui je vais produire.
+C'est aussi un bon moyen pour moi d'être en contact direct avec mes futurs collaborateurs, associés ou prospects qui pourront suivre le contenu que je vais produire.
 
 J'aurais aussi l'occasion de démontrer mon expertise sur certains sujets et je pense que cela renforcera mon personnal branding et m'apportera de potentiels clients.
 
@@ -31,7 +31,7 @@ J'aurais aussi l'occasion de démontrer mon expertise sur certains sujets et je 
 
 Je ne suis pas à l'aise pour écrire, c'est donc un challenge pour moi de tenir un blog. C'est un exercice difficile mais qui pourra m'apporter beaucoup, notamment sur des compétences à l'écrit et en story telling.
 
-Le fait réfléchir avant d'écrire et de passer du temps sur un article me permettra de mieux connaitre mes valeurs, mes forces et faiblesses.
+Le fait de réfléchir avant d'écrire et de passer du temps sur un article me permettra de mieux connaitre mes valeurs, mes forces et faiblesses.
 Aussi, le fait de résumer ou de vulgariser des sujets techniques est surement l'une des meilleures façons de maitriser son sujet.
 
 A trés bientôt,
