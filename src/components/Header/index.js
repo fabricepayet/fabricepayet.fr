@@ -199,7 +199,7 @@ const Header = ({ data }) => (
           <NameContainer>
             <div style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '24px', lineHeight: '48px' }}>
               Fabrice Payet
-          </div>
+            </div>
 
             <div style={{ fontSize: '24px' }}>
               {data.site.siteMetadata.title}

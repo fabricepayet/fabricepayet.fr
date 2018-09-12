@@ -47,7 +47,7 @@ export default class componentName extends Component {
         {this.renderLinkSection('#about', 'A propos')}
         {this.renderLinkSection('#resume', 'Expériences')}
         {this.renderLinkSection('#projects', 'Projets')}
-        {this.renderLinkSection('#blog', 'Blog')}
+        <li><Link to={"/blog"}>Blog</Link></li>
         {this.renderLinkSection('#contact', 'Contact')}
       </Menu>
     )
