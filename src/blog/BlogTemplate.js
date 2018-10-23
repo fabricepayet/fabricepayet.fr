@@ -13,6 +13,12 @@ const ArticleContainer = styled.div`
   margin: 48px auto;
   max-width: 1140px;
 
+  p {
+    text-align: justify;
+    line-height: 30px;
+    margin-bottom: 1.1rem;
+  }
+
   h2 {
     font-family: Roboto Mono,monospace;
     text-transform: uppercase;
@@ -30,7 +36,7 @@ const ArticleContainer = styled.div`
 
     p {
       margin-bottom: 0;
-      font-size: 1.1rem;
+      font-size: 1.1em;
       font-style: italic;
     }
   }
@@ -38,6 +44,12 @@ const ArticleContainer = styled.div`
   h3 {
     font-family: Roboto, monospace;
     font-size: 18px;
+  }
+
+  ul {
+    li {
+      margin-bottom: 0.3rem;
+    }
   }
 
   @media screen and (max-width: 1188px) {
