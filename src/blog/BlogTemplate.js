@@ -19,7 +19,7 @@ const ArticleContainer = styled.div`
     margin-bottom: 1.1rem;
   }
 
-  h2 {
+  h1 {
     font-family: Roboto Mono,monospace;
     text-transform: uppercase;
     font-weight: 700;
@@ -27,6 +27,18 @@ const ArticleContainer = styled.div`
     margin-bottom: 15px;
     font-size: 22px;
     letter-spacing: -1px;
+  }
+
+  h2 {
+    font-family: Roboto Mono,monospace;
+    font-weight: 700;
+    margin: 48px 0 24px;
+    font-size: 1.2em;
+  }
+
+  img {
+    display: flex;
+    margin: auto;
   }
 
   blockquote {
@@ -86,7 +98,7 @@ const Date = styled.div`
   font-size: 14px;
   line-height: 20px;
   color: #999;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
 `
 
 export default class BlogTemplate extends Component {
@@ -101,7 +113,7 @@ export default class BlogTemplate extends Component {
         <BackContainer>
           <Link to="/blog"><i className="fa fa-arrow-left"></i> Retour</Link>
         </BackContainer>
-        <h2>{data.markdownRemark.frontmatter.title}</h2>
+        <h1>{data.markdownRemark.frontmatter.title}</h1>
         <Date>{data.markdownRemark.frontmatter.date}</Date>
         <div dangerouslySetInnerHTML={{
           __html: data.markdownRemark.html

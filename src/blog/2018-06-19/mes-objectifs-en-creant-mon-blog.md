@@ -10,7 +10,7 @@ Bonjour, oui j'ai décidé de créé mon blog ! Il y a un moment que j'y pensé 
 
 Aujourd'hui, je pense qu'écrire un blog peut m'apporter beaucoup de choses positives. Voici donc ma liste principale d'objectifs :
 
-### Partager mes idées et expériences
+## Partager mes idées et expériences
 
 En tant que développeur, je suis souvent confronter à des problèmes de conception ou purement techniques et j'aimerais partager avec vous les solutions que je propose ou échanger sur les bonnes pratiques et nouvelles façons de faire.
 
@@ -19,7 +19,7 @@ Je me lance aussi cette année dans l'aventure entreprenariale, j'ai plusieurs i
 J'aime lire et apprendre de nouvelles choses, je vais essayer de m'inspirer de mes lectures pour écrire sur des sujets que je découvre et qui me plaisent.
 
 
-### Développer mon réseau professionnel
+## Développer mon réseau professionnel
 
 Ecrire des articles, me permettra aussi d'augmenter le nombre de visites sur mon site, notamment avec le référencement SEO, et ainsi augmenter ma visibilité.
 C'est aussi un bon moyen pour moi d'être en contact direct avec mes futurs collaborateurs, associés ou prospects qui pourront suivre le contenu que je vais produire.
@@ -27,7 +27,7 @@ C'est aussi un bon moyen pour moi d'être en contact direct avec mes futurs coll
 J'aurais aussi l'occasion de démontrer mon expertise sur certains sujets et je pense que cela renforcera mon personnal branding et m'apportera de potentiels clients.
 
 
-### Améliorer mes compétences
+## Améliorer mes compétences
 
 Je ne suis pas à l'aise pour écrire, c'est donc un challenge pour moi de tenir un blog. C'est un exercice difficile mais qui pourra m'apporter beaucoup, notamment sur des compétences à l'écrit et en story telling.
 

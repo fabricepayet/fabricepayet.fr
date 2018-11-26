@@ -18,7 +18,3 @@ Le fameux "fake it until make it" est un des concepts clés dans la réalisation
 
 Vous voulez faire une application ? Vous avez besoin d'aide pour la réalisation de votre MVP fonctionnel ?
 [Contactez moi](/#contact)
-
-
-
-

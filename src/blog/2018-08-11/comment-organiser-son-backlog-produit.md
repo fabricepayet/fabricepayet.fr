@@ -18,9 +18,3 @@ Sans priorisation une organisation ne sait pas ou elle va et risque de passer so
 ![Backlog de MimoPop](https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/backlog-mimopop.jpg)
 
 Certains responsables produits utilisent une feuille Excel pour la gestion de leur backlog, moi je prèfère [Trello](https://trello.com), qui permet une meilleure dynamique dans les échanges avec l'équipe. Et vous, comment gérez-vous votre backlog produit ? Quels sont vos outils ?
-
-
-
-
-
-

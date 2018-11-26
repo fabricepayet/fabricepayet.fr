@@ -18,8 +18,3 @@ Lors de sa première visite l'utilisateur est invité à installer l'application
 Pour fonctionner avec des conditions des réseaux incertaines, la PWA utilise ce qu'on appelle un "Service Worker", qui est en fait un proxy du coté client de l'application qui va gérer le cache afin de servir les ressources en fonction de la connectivité. Un autre avantage de la PWA est qu'elle est toujours à jour sur tous les clients, contrairement à une application classique ou il faut souvent gérer plusieurs versions en production...
 
 La PWA vous permet aussi de réduire les couts de développement, en effet les applications mobiles classiques sont souvent développées pour une plateforme unique, tandis que les PWAs fonctionnent sur toutes les plateformes. Si vous avez déja une application web, vous pouvez choisir d'améliorer progressivement votre application afin de profiter des fonctionnalités des PWAs et vous arrêter dans cette implémentation quand vous le voulez et selon vos besoins.
-
-
-
-
-
