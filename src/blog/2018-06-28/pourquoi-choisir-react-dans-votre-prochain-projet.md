@@ -1,7 +1,7 @@
 ---
 title: "Pourquoi choisir React dans votre prochain projet"
 date: "2018-06-28"
-cover: /images/blog/react-most-loved.png
+cover: https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/react-most-loved.png
 ---
 
 React est une librairie cliente permettant de développer des interfaces utilisateur. Malgré ses nouveaux concepts et sa façon différente d'appréhender le développement front end, React connait une forte adoption des développeurs. Alors pourquoi React pourrait être interessant pour votre prochain projet ?
@@ -10,7 +10,7 @@ React est une librairie cliente permettant de développer des interfaces utilisa
 
 Depuis sa publication en 2013, React a connu une forte croissance et est devenue la bibliothèque cliente la plus appréciée par les développeurs. Soutenue par Facebook, une trés grosse communauté s'est formé autour de React et de plus en plus de développeurs se forment sur cette technologie. Il est aujourd'hui plutôt facile de trouver des développeurs compétants sur React et l'interêt pour cette technologie ne fait qu'augmenter.
 
-![React Most Loved](/images/blog/react-most-loved.png)
+![React Most Loved](https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/react-most-loved.png)
 
 ### La performance et la scalabilité
 

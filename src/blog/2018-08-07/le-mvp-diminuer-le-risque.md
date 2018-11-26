@@ -1,7 +1,7 @@
 ---
 title: "Diminuer le risque avec un MVP"
 date: "2018-08-07"
-cover: /images/blog/mvp-cycle.jpg
+cover: https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/mvp-cycle.jpg
 ---
 
 > La vie est trop courte pour construire un produit dont personne de veut.
@@ -12,7 +12,7 @@ cover: /images/blog/mvp-cycle.jpg
 
 Contrairement aux grosses entreprises traditionnelles, les startups ne disposent ni de beaucoup de temps et ni gros budget et l'échec est souvent synonyme de mort pour la startup. Il faut donc réussir à vérifier ses hypothèses de marché rapidement et avec peu de moyens, c'est ce que permet le MVP (Produit Minimum Viable). Le MVP est la première expérience construite dans le but de vérifier une hypothèse de marché spécifique. Le MVP doit permettre de récolter du feedback, d'attirer les premiers utilisateurs et surtout de savoir si on doit continuer, pivoter ou simplement abandonner. Le MVP est un processus d'apprentissage client, il ne sert ni à détecter les problèmes de conception, ni technologique, ni de mise à l'échelle.
 
-![MVP's cycle](/images/blog/mvp-cycle.jpg)
+![MVP's cycle](https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/mvp-cycle.jpg)
 
 Le fameux "fake it until make it" est un des concepts clés dans la réalisation du MVP, il consiste à faire croire aux utilisateurs que le produit est disponible afin de mesurer les réactions des utilisateurs. Il permet d'avoir des retours réels de vos utilisateurs avec le minimum de ressources et d'effort. Mais attention, le MVP doit apporter assez de valeur pour retenir vos earlys adopteurs; les early adopteurs sont les personnes qui sont prêtes à "payer" avec une ressource rare (attention, temps, email, ...). Les early adopteurs se fichent de savoir si d'autres personnes l'utilisent, qu'il soit moche ou buggué, tout ce qui compte c'est qu'il peut résoudre leur problème. Selon l'hypothèse testée, il est préférable de choisir un type de MVP (landing page, vidéo, maquette, prototype fonctionnel, ...) plutôt qu'un autre. Si on souhaite juste tester le concept une landing page présentant les fonctionnalités et les bénéfices de la solution semblent le mieux adaptés, par contre si on souhaite mesurer le product market fit, un prototype fonctionnel et surement beaucoup plus approprié.
 

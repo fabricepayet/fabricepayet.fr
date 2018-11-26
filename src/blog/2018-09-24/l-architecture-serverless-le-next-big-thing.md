@@ -1,13 +1,13 @@
 ---
 title: "L'architecture serverless le next big thing ?"
 date: "2018-09-24"
-cover: /images/blog/serverless.jpg
+cover: https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/serverless.jpg
 ---
 
 
 L'architecture Serverless est un nouveau modèle pour le [Cloud Computing](https://fr.wikipedia.org/wiki/Cloud_computing), il change la façon dont les développeurs conçoivent les applications et leur permettent de se concentrer uniquement sur la logique métier, sans avoir besoin de se soucier des problématiques serveurs. Serverless ne signifie pas qu'on n'utilise pas de serveurs, mais plutôt que les développeurs peuvent faire une abstraction complète de ceux-ci.
 
-![Photo: shylendrahoode/Getty Images](/images/blog/serverless.jpg)
+![Photo: shylendrahoode/Getty Images](https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/serverless.jpg)
 
 *Photo: shylendrahoode/Getty Images*
 
@@ -23,7 +23,7 @@ Les avantages de l'architecture Serverless pour les entreprises sont nombreux, e
 - La mise à l'échelle automatique permet de supporter une augmentation de la charge sans augmenter la complexité technique. Ce sont les fournisseurs de services Cloud qui se chargent de la mise à l'échelle (Vous n'avez même plus besoin de gérer des instances de serveur...)
 - Le concept de "Pay as you Go" et les micro-factures permettent une réduction des coûts: Vous ne payez que pour l'exécution de votre code ou pour l'accès aux ressources. Si votre application n'est pas utilisée, vous n'avez rien à payer.
 
-![Photo: Colin Anderson/Getty Images](/images/blog/serverless2.jpg)
+![Photo: Colin Anderson/Getty Images](https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/serverless2.jpg)
 
 *Photo: Colin Anderson/Getty Images*
 

@@ -1,7 +1,7 @@
 ---
 title: "Comment organiser son backlog produit ?"
 date: "2018-08-11"
-cover: /images/blog/backlog-mimopop.jpg
+cover: https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/backlog-mimopop.jpg
 ---
 
 Le backlog produit est un document souvent sous forme de liste qui rassemble tous les éléments nécessaires pour votre produit. Ces éléments peuvent être des fonctionnalités, des bugs fixes, des prérequis, ... Ce n'est pas seulement une liste d'éléments visibles par l'utilisateur ! Le backlog produit est un document vivant, les éléments qu'il contient émergent progressivement et évolue tout au long de la vie de votre produit. De nouveaux éléments y sont ajoutés, modifiés, et ajustés régulièrement.
@@ -15,7 +15,7 @@ Sans priorisation une organisation ne sait pas ou elle va et risque de passer so
 - les dépendances entre les éléments du backlog
 - les prochaines deadlines et milestones
 
-![Backlog de MimoPop](/images/blog/backlog-mimopop.jpg)
+![Backlog de MimoPop](https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/backlog-mimopop.jpg)
 
 Certains responsables produits utilisent une feuille Excel pour la gestion de leur backlog, moi je prèfère [Trello](https://trello.com), qui permet une meilleure dynamique dans les échanges avec l'équipe. Et vous, comment gérez-vous votre backlog produit ? Quels sont vos outils ?
 
