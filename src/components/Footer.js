@@ -15,6 +15,19 @@ const FooterContainer = styled.div`
   z-index: 160;
   font-family: Roboto Mono, monospace;
 
+  li {
+    a {
+      color: white;
+    }  
+  }
+
+  dd {
+    a {
+      color: white;
+    }  
+  }
+  
+
   &:before {
     background: linear-gradient(54deg,rgba(74,76,179,.95) 34%,hsla(0,34%,71%,.95));
     height: 100%;
@@ -78,7 +91,7 @@ const FooterRights = styled.div`
   text-align: center;
 
   a {
-    color: white;
+    color: white !important;
 
     &:hover,
     &:active {

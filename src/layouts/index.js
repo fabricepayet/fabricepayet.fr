@@ -6,11 +6,121 @@ import $ from 'jquery';
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import './index.css'
+// import './index.css'
 
 const MainContainer = styled.div`
   background-color: white;
 `
+
+const Layout = styled.div`
+  .menu.menu--active {
+    background-color: #fff;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .14);
+    z-index: 200;
+  }
+
+  .menu.menu--active a {
+    color: #555;
+  }
+
+  .menu.menu--active .menu__wrapper,
+  .menu.menu--active .menu__mobile {
+    margin-top: 25px;
+    z-index: 9999;
+    position: relative;
+    width: 100%;
+    z-index: 170;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu.active {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: 1;
+  }
+
+  .mobile-menu .mobile-menu__wrapper {
+    height: 100%;
+    overflow: auto;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Roboto Mono,monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 60px;
+  }
+
+  .mobile-menu .mobile-menu__close {
+    color: #fff;
+    transition: all .3s;
+    position: absolute;
+    top: 50px;
+    background-color: transparent;
+    border: none;
+    left: 24px;
+    cursor: pointer;
+  }
+
+  .mobile-menu.mobile-menu--active .mobile-menu__close {
+    top: 25px!important;
+  }
+
+  .mobile-menu .mobile-menu__wrapper ul {
+    padding: 30px 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 100%;
+  }
+
+  .mobile-menu .mobile-menu__wrapper ul li {
+    list-style: none;
+    padding: 6px 0;
+  }
+
+  .mobile-menu .mobile-menu__wrapper ul li a {
+    color: #fff;
+    display: inline-block;
+    padding: 11px;
+    position: relative;
+  }
+
+  .menu__mobile-button {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 1188px) {
+    .mobile-menu {
+      display: block;
+    }
+  }
+
+  .menu.menu--active button {
+    color: #555;
+  }
+
+  a {
+    transition: all .3s;
+    position: relative;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #6d56c1;
+  }
+`;
+
 class TemplateWrapper extends Component {
   constructor(props) {
     super(props);
@@ -45,7 +155,7 @@ class TemplateWrapper extends Component {
 
   render() {
     return (
-      <div>
+      <Layout>
         <Helmet
           title="Développeur d'application Web et Mobile en Freelance à la Réunion"
           meta={[
@@ -70,7 +180,7 @@ class TemplateWrapper extends Component {
         </Helmet>
         <MainContainer data={this.props.data}>{this.props.children()}</MainContainer>
         <Footer data={this.props.data} />
-      </div >
+      </Layout>
     )
   }
 }

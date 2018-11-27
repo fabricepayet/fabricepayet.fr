@@ -16,7 +16,7 @@ const MainHeader = styled.div`
   font-family: Roboto Mono,monospace;
   z-index: 150;
   margin-bottom: 24px;
-  
+
   &:before {
     background: linear-gradient(54deg,rgba(74,76,179,.95) 34%,hsla(0,34%,71%,.95));
     height: 100%;

@@ -34,6 +34,7 @@ const ArticleContainer = styled.div`
     font-weight: 700;
     margin: 48px 0 24px;
     font-size: 1.2em;
+    color: rgba(0,0,0,0.8)
   }
 
   img {

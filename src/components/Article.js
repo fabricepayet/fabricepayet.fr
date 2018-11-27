@@ -23,7 +23,7 @@ const ArticleStyled = styled.article`
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin: 12px 0 6px;
     font-weight: 700;
     color: #555;
   }

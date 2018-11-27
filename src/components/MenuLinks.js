@@ -8,7 +8,12 @@ const Menu = styled.ul`
 
   li {
     display: inline-block;
+    
+    a {
+      color: white;
+    }
   }
+
 `
 
 export default class componentName extends Component {
