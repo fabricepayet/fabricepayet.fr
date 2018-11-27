@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components';
-import MenuLinks from '../MenuLinks';
+import MenuLinks from './MenuLinks';
 import Img from 'gatsby-image';
 
 const MainHeader = styled.div`

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-import ResumeItem from './ResumeItem/ResumeItem'
+import ResumeItem from './ResumeItem'
 
 const ResumeContainer = styled.div`
 `

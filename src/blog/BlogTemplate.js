@@ -102,7 +102,7 @@ const Date = styled.div`
 `
 
 const ArticleInner = styled.div`
- margin-bottom: 24px;
+ margin-bottom: 48px;
 `
 
 export default class BlogTemplate extends Component {

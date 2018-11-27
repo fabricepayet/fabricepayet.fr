@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
-import $ from "jquery";
+import $ from 'jquery';
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-// import './index.css'
+import './index.css'
 
 const MainContainer = styled.div`
   background-color: white;

@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import Button from '../Button'
+import Button from './Button'
 
 const FooterContainer = styled.div`
   background-color: #6d56c1;

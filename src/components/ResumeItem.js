@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import { withPrefix } from 'gatsby-link';
-import ListTags from '../ListTags';
+import ListTags from './ListTags';
 
 const Company = styled.span`
   text-transform: uppercase;

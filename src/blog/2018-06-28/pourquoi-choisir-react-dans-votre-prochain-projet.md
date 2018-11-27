@@ -20,7 +20,3 @@ Concernant la scalabilité, React a déja fait ses preuves depuis des années av
 ## L'approche composant
 React incite les développeurs à découper leurs applications en élements réutilisables et modulaires, c'est ce qu'on appelle les composants. Chaque composant agit comme une machine à état avec ses propres propriétés et ses propres états. Le fait d'utiliser des composants permet une grande réutilisation et une meilleure portabilité. Au lieu de développer une nouvelle fois le comportement d'un élément graphique, la réutilisation d'un composant permet un gain de temps non négligeable. Cela permet aussi une meilleure indépendance des éléments et offre même la possibilité de les exporter sur des nouveaux projets. On trouve aujourd'hui de nombreuses librairies de composants complets et testés, il est donc plus rapide et efficace d'utiliser ses librairies déja approuvées et testées.
 
-
-A trés bientôt,
-
-Fabrice
