@@ -16,7 +16,7 @@ const ArticleContainer = styled.div`
   p {
     text-align: justify;
     line-height: 30px;
-    margin-bottom: 1.1rem;
+    margin-bottom: 1rem;
   }
 
   h1 {
