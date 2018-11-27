@@ -6,7 +6,7 @@ cover: https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/the-hook-model.p
 
 <!-- ![Utilisateurs](https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/hook-users.jpg) -->
 
-Comme beaucoup de personnes, je passe beaucoup (voire peut-être trop) de temps sur les réseaux sociaux ([Facebook](http://www.facebook.com/), [Instagram](https://www.instagram.com), [Youtube](https://www.youtube.com/), ...). Comment ces entreprises ont-ils fait pour nous rendre accrocs à leurs produits ? Ils ont créé de puissantes habitudes chez leurs utilisateurs.
+Comme beaucoup de personnes, je passe trop de temps sur les réseaux sociaux ([Facebook](http://www.facebook.com/), [Instagram](https://www.instagram.com), [Youtube](https://www.youtube.com/), ...). Comment ces entreprises ont-ils fait pour nous rendre accrocs à leurs produits ? Ils ont créé de puissantes habitudes chez leurs utilisateurs.
 
 Une habitude est en fait, un comportement effectué avec peu ou sans conscience. Est-ce qu'il vous arrive aussi d'ouvrir une de ces applications sans vraiment savoir pourquoi ?
 
