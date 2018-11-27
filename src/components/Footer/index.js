@@ -58,6 +58,7 @@ const SectionTitle = styled.h2`
   font-size: 36px;
   line-height: 42px;
   font-family: Roboto Mono,monospace;
+  color: white;
   font-weight: normal;
 `
 
