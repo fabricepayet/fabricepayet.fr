@@ -28,7 +28,7 @@ const ResumeItemContainer = styled.div`
   display: flex;
   border-left: 2px solid #6d56c1;
   padding-left: 25px;
-  padding-bottom: 50px;
+  padding-bottom: 24px;
 
   &:before {
     width: 12px;

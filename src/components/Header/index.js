@@ -202,7 +202,7 @@ const Header = ({ data }) => (
             </div>
 
             <div style={{ fontSize: '24px' }}>
-              {data.site.siteMetadata.title}
+              {data.site.siteMetadata.title.split('-')[1]}
             </div>
           </NameContainer>
         </IdentityContainer>

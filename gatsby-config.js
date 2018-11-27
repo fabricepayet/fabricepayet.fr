@@ -1,9 +1,10 @@
 module.exports = {
     siteMetadata: {
         siteUrl: `https://fabricepayet.fr`,
-        title: 'Fabrice Payet - Développeur Freelance à la Réunion',
-        desc: `Freelance Développeur à la Réunion, Fabrice Payet est spécialisé dans la création d\'application Web & Mobile sur mesure. FullStack Javascript & Méthodologie Agile / Lean Startup`,
-        description: `Freelance Développeur à la Réunion, Fabrice Payet est spécialisé dans la création d\'application Web & Mobile sur mesure. FullStack Javascript & Méthodologie Agile / Lean Startup`
+        title: 'Fabrice Payet - Développeur Indépendant à la Réunion',
+        headerTitle: 'Développeur Indépendant à la Réunion',
+        desc: `Développeur Freelance à la Réunion, Fabrice Payet est spécialisé dans la création d\'application Web & Mobile. Développement FullStack Javascript | Méthodologie Agile | Lean Startup | Conseil`,
+        description: `Développeur Freelance à la Réunion, Fabrice Payet est spécialisé dans la création d\'application Web & Mobile. Développement FullStack Javascript | Méthodologie Agile | Lean Startup | Conseil`
     },
     plugins: [
         'gatsby-plugin-react-helmet',

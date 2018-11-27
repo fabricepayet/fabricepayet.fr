@@ -101,6 +101,10 @@ const Date = styled.div`
   margin-bottom: 24px;
 `
 
+const ArticleInner = styled.div`
+ margin-bottom: 24px;
+`
+
 export default class BlogTemplate extends Component {
   render() {
     const { data } = this.props;
@@ -115,7 +119,7 @@ export default class BlogTemplate extends Component {
         </BackContainer>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
         <Date>{data.markdownRemark.frontmatter.date}</Date>
-        <div dangerouslySetInnerHTML={{
+        <ArticleInner dangerouslySetInnerHTML={{
           __html: data.markdownRemark.html
         }} />
         <ReactDisqusThread

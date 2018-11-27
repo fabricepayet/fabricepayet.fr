@@ -78,18 +78,13 @@ const IndexPage = ({ data }) => (
       <About>
         <SectionTitle>Bonjour,</SectionTitle>
         <p style={{ lineHeight: '30px' }}>
-          Je suis <Link to="/">Fabrice Payet</Link>,{' '}
-          <strong>développeur full stack</strong> passionné et vivant
-          actuellement à{' '}
+          Je suis <Link to="/">Fabrice Payet</Link>, je suis{' '}
+          <strong>développeur Full Stack</strong> et j'habite actuellement à{' '}
           <a href="https://www.iledelareunion.net/" target="_blank">
             la Réunion
-          </a>. Durant <Link to="#resume" onClick={(e) => { e.preventDefault(); jump('#resume') }}>mon parcours professionnel</Link>,
-          j'ai travaillé avec de nombreuses startups dans la création et la
-          validation de leurs produits. Je sais aussi encadrer une équipe et
-          organiser des cycles de développement en tant que{' '}
-          <strong>Scrum Master / Chef de projet</strong>.
+          </a>. Durant ces dernières années, j'ai pu accompagner plusieurs entreprises et porteurs de projet dans la création de leur produit. En tant que prestataire technique, je m'assure des bons choix techniques, de la conception, du développement et de la mise en production. Je sais aussi encadrer une équipe et organiser des cycles de développement en suivant les méthodologies agiles.
         </p>
-        Mes technos préférés sont:{' '}
+        Mes technos préférées sont:{' '}
         <a href="https://www.meteor.com/" target="_blank">
           MeteorJS
         </a>,{' '}
@@ -102,8 +97,8 @@ const IndexPage = ({ data }) => (
         </a>.
         <p />
         <p>
-          Actuellement en <a href="https://www.malt.fr/profile/fabricepayet" target="_blank">freelance</a>, je propose mes services pour{' '}
-          <strong>la création d'application web & mobile</strong>, je suis
+          Je travaille actuellement en <a href="https://www.malt.fr/profile/fabricepayet" target="_blank">Freelance</a>, je propose mes services pour le développement d'{' '}
+          <strong>Application Web & Mobile</strong>, je suis
           disponible et à l'écoute de vos besoins, vous pouvez{' '}
           <Link to="/contact" onClick={(e) => { e.preventDefault(); jump('#contact') }}>me contacter</Link> pour en discuter.
         </p>

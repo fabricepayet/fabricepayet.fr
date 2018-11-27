@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 const ButtonStyled = styled.button`
   background-color: #6d56c1;
   height: 50px;
-  border-radius: 25px;
+  border-radius: 6px;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;

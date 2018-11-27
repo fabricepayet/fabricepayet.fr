@@ -59,7 +59,7 @@ export default class Resume extends Component {
         company: 'FlashMVP',
         date: 'nov2013 - dec2014',
         description: [
-          'Conception d’application web & mobile',
+          "Développement d'application sur mesure",
         ],
         logo: 'flashmvp.jpg',
         link: 'https://flashmvp.net/',
@@ -73,7 +73,7 @@ export default class Resume extends Component {
         description: [
           'Pilotage du système d’information',
           'Sélection, contrôle et suivi des prestataires',
-          'Réalisation du site web'
+          'Réalisation et maintenance du site web'
         ],
         logo: 'SPLRMR.jpg',
         link: 'http://museesreunion.re/',
