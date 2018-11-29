@@ -25,7 +25,3 @@ Dans sa version gratuite, [Blinkist](https://www.blinkist.com/) propose un nouve
 
 ![Blinkist](https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/blinkist.png)
 
-
-En espérant vous avoir donner envie de tester ces applications,
-
-Fabrice.

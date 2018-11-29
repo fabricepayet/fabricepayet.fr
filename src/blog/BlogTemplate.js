@@ -25,8 +25,9 @@ const ArticleContainer = styled.div`
     font-weight: 700;
     margin-top: 30px;
     margin-bottom: 15px;
-    font-size: 22px;
-    letter-spacing: -1px;
+    font-size: 24px;
+    // letter-spacing: -1px;
+    color: #6d56c1;
   }
 
   h2 {
