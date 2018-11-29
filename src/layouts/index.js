@@ -6,6 +6,8 @@ import $ from 'jquery';
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+
+import favicon from '../images/favicon.png';
 // import './index.css'
 
 const MainContainer = styled.div`
@@ -169,6 +171,9 @@ class TemplateWrapper extends Component {
               content:
                 'fabrice, payet, développeur, freelance, réunion, react, application, mobile, web, meteorjs, startup, fullstack',
             },
+          ]}
+          link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
           ]}
         >
           <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata" rel="stylesheet" />
