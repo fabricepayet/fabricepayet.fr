@@ -7,7 +7,7 @@ import ResumeItem from './ResumeItem'
 const ResumeContainer = styled.div`
 `
 
-const SectionSubTitle = styled.h2`
+const SectionSubTitle = styled.h3`
   font-family: Roboto Mono,monospace;
   font-size: 14px;
   line-height: 20px;
@@ -15,7 +15,7 @@ const SectionSubTitle = styled.h2`
   text-transform: uppercase;
   font-weight: 700;
   color: #999;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 `
 
 const ResumeList = styled.div`

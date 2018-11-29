@@ -27,7 +27,11 @@ const About = styled.div`
 const InnerContainer = styled.div`
   margin: 0px auto;
   max-width: 1140px;
-  padding: 74px 0;
+  padding: 48px 0;
+
+  h2 {
+    margin: 24px 0 48px;
+  }
 
   @media screen and (max-width: 1188px) {
     padding: 24px;
@@ -123,10 +127,14 @@ const IndexPage = ({ data }) => (
       <Resume />
     </InnerContainer>
 
+    <hr />
+
     <InnerContainer id="projects">
       <SectionTitle>Mes projets récents</SectionTitle>
       {projects.map(project => <ProjectItem key={project.name} name={project.name} image={project.image} description={project.description} tags={project.tags} link={project.link} />)}
     </InnerContainer>
+
+    <hr />
 
     <InnerContainer id="blog">
       <SectionTitle>Mes derniers articles</SectionTitle>

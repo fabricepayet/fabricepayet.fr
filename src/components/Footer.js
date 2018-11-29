@@ -67,7 +67,7 @@ const FormContainer = styled.div`
 `
 
 const SectionTitle = styled.h2`
-  margin-bottom: 40px;
+  margin: 24px 0 48px;
   font-size: 36px;
   line-height: 42px;
   font-family: Roboto Mono,monospace;
@@ -78,7 +78,7 @@ const SectionTitle = styled.h2`
 const InnerContainer = styled.div`
   margin: 0px auto;
   max-width: 1140px;
-  padding: 48px 24px;
+  padding: 24px 0;
 
   form {
     margin-bottom: 0;

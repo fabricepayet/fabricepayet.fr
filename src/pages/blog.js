@@ -14,7 +14,7 @@ const InnerContainer = styled.div`
 `;
 
 const SectionTitle = styled.h2`
-  margin-bottom: 40px;
+  margin: 0 0 24px;
   font-size: 36px;
   line-height: 42px;
   font-family: Roboto Mono,monospace;
