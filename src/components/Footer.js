@@ -78,7 +78,7 @@ const SectionTitle = styled.h2`
 const InnerContainer = styled.div`
   margin: 0px auto;
   max-width: 1140px;
-  padding: 24px 0;
+  padding: 24px;
 
   form {
     margin-bottom: 0;

@@ -5,7 +5,6 @@ import ListTags from './ListTags';
 const Project = styled.div`
   display: flex;
   margin-left: 0;
-  margin-bottom: 40px;
   transition: box-shadow .3s;
   margin-right: 0;
 
@@ -70,7 +69,6 @@ const Description = styled.div`
     }
   }
 `
-
 
 export default class ProjectItem extends Component {
   render() {

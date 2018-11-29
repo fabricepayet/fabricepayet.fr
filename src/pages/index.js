@@ -14,7 +14,7 @@ import Header from '../components/Header';
 
 const ArticleListing = styled.div`
   display: flex;
-  padding-bottom: 24px;
+  padding: 24px 0;
 
   @media screen and (max-width: 800px) {
     display: block;
@@ -29,16 +29,24 @@ const InnerContainer = styled.div`
   max-width: 1140px;
   padding: 48px 0;
 
-  h2 {
-    margin: 24px 0 48px;
-  }
-
   @media screen and (max-width: 1188px) {
     padding: 24px;
   }
 `
 
 const SectionTitle = styled.h2`
+  margin: 0;
+  font-size: 36px;
+  line-height: 42px;
+  font-family: Roboto Mono,monospace;
+  font-weight: normal;
+
+  @media screen and (max-width: 800px) {
+    font-size: 28px;
+  }
+`
+
+const Hello = styled.h2`
   margin-bottom: 40px;
   font-size: 36px;
   line-height: 42px;
@@ -80,7 +88,7 @@ const IndexPage = ({ data }) => (
     <Header data={data} />
     <InnerContainer id="about">
       <About>
-        <SectionTitle>Bonjour,</SectionTitle>
+        <Hello>Bonjour,</Hello>
         <p style={{ lineHeight: '30px' }}>
           Je suis <Link to="/">Fabrice Payet</Link>, je suis{' '}
           <strong>développeur Full Stack</strong> et j'habite actuellement à{' '}
