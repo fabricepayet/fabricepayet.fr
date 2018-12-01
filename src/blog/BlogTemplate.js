@@ -167,7 +167,7 @@ export default class BlogTemplate extends Component {
         <div dangerouslySetInnerHTML={{
           __html: data.markdownRemark.html
         }} />
-        <MailChimp />
+        {/* <MailChimp /> */}
         <ReactDisqusThread
           shortname="fabricepayetfr"
           identifier={data.markdownRemark.fields.slug}
