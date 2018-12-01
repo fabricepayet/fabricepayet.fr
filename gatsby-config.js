@@ -14,6 +14,12 @@ module.exports = {
         'gatsby-plugin-robots-txt',
         'gatsby-transformer-remark',
         {
+            resolve: 'gatsby-plugin-mailchimp',
+            options: {
+                endpoint: 'https://fabricepayet.us19.list-manage.com/subscribe/post?u=283fdcb87f6389637411cb0cf&amp;id=5806eb8fe5',
+            }
+        },
+        {
             resolve: `gatsby-plugin-feed`
         },
         {

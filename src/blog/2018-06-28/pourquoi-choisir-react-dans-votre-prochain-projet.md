@@ -1,5 +1,5 @@
 ---
-title: "Pourquoi choisir React dans votre prochain projet"
+title: "Pourquoi choisir React dans votre prochain projet ?"
 date: "2018-06-28"
 cover: https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/react-most-loved.png
 ---

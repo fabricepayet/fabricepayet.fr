@@ -4,6 +4,8 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import ReactDisqusThread from 'react-disqus-thread';
 
+import MailChimp from '../components/Mailchimp';
+
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -129,10 +131,6 @@ const Date = styled.div`
   margin-bottom: 12px;
 `
 
-const ArticleInner = styled.div`
- margin-bottom: 48px;
-`
-
 export default class BlogTemplate extends Component {
   render() {
     const { data } = this.props;
@@ -166,9 +164,10 @@ export default class BlogTemplate extends Component {
           </SocialButtonContainer>
 
         </div>
-        <ArticleInner dangerouslySetInnerHTML={{
+        <div dangerouslySetInnerHTML={{
           __html: data.markdownRemark.html
         }} />
+        <MailChimp />
         <ReactDisqusThread
           shortname="fabricepayetfr"
           identifier={data.markdownRemark.fields.slug}
