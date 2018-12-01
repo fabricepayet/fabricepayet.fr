@@ -4,6 +4,32 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import ReactDisqusThread from 'react-disqus-thread';
 
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  FacebookShareCount,
+  EmailShareButton,
+  EmailIcon
+} from 'react-share';
+
+const SocialButtonContainer = styled.div`
+  margin-bottom: 24px;
+  display: flex;
+
+  div[role='button'] {
+    margin-right: 2px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+`
+
 const ArticleContainer = styled.div`
   background-color: #fff;
   padding: 50px 70px 60px;
@@ -100,7 +126,7 @@ const Date = styled.div`
   font-size: 14px;
   line-height: 20px;
   color: #999;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 `
 
 const ArticleInner = styled.div`
@@ -121,6 +147,25 @@ export default class BlogTemplate extends Component {
         </BackContainer>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
         <Date>{data.markdownRemark.frontmatter.date}</Date>
+        <div style={{ marginBottom: '24px' }}>
+          <div style={{ fontSize: 'small', color: 'grey' }}>Partager cet article: </div>
+          <SocialButtonContainer>
+            <FacebookShareButton url={`https://fabricepayet.fr/${data.markdownRemark.fields.slug}`}>
+              <FacebookIcon size={32} round={true} />
+            </FacebookShareButton>
+            <TwitterShareButton url={`https://fabricepayet.fr/${data.markdownRemark.fields.slug}`}>
+              <TwitterIcon size={32} round={true} />
+            </TwitterShareButton>
+            <LinkedinShareButton url={`https://fabricepayet.fr/${data.markdownRemark.fields.slug}`}>
+              <LinkedinIcon size={32} round={true} />
+            </LinkedinShareButton>
+            <EmailShareButton url={`https://fabricepayet.fr/${data.markdownRemark.fields.slug}`}>
+              <EmailIcon size={32} round={true} />
+            </EmailShareButton>
+            {/* <FacebookShareCount url={`https://fabricepayet.fr/${data.markdownRemark.fields.slug}`} /> */}
+          </SocialButtonContainer>
+
+        </div>
         <ArticleInner dangerouslySetInnerHTML={{
           __html: data.markdownRemark.html
         }} />
