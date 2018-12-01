@@ -5,7 +5,7 @@ cover: https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/serverless.jpg
 ---
 
 
-L'architecture Serverless est un nouveau modèle pour le [Cloud Computing](https://fr.wikipedia.org/wiki/Cloud_computing), il change la façon dont les développeurs conçoivent les applications et leur permettent de se concentrer uniquement sur la logique métier, sans avoir besoin de se soucier des problématiques serveurs. Serverless ne signifie pas qu'on n'utilise pas de serveurs, mais plutôt que les développeurs peuvent faire une abstraction complète de ceux-ci.
+**L'architecture Serverless est un nouveau modèle pour le [Cloud Computing](https://fr.wikipedia.org/wiki/Cloud_computing), il change la façon dont les développeurs conçoivent les applications et leur permettent de se concentrer uniquement sur la logique métier, sans avoir besoin de se soucier des problématiques serveurs. Serverless ne signifie pas qu'on n'utilise pas de serveurs, mais plutôt que les développeurs peuvent faire une abstraction complète de ceux-ci.**
 
 ![Photo: shylendrahoode/Getty Images](https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/serverless.jpg)
 
