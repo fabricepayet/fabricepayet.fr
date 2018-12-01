@@ -182,6 +182,7 @@ class TemplateWrapper extends Component {
             src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
             crossorigin="anonymous"
           />
+          <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/283fdcb87f6389637411cb0cf/1ebbcc4bf9b0619b34cccd19a.js");</script>
         </Helmet>
         <MainContainer data={this.props.data}>{this.props.children()}</MainContainer>
         <Footer data={this.props.data} />
