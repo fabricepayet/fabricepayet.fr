@@ -6,11 +6,11 @@ cover: https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/the-hook-model.p
 
 <!-- ![Utilisateurs](https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/hook-users.jpg) -->
 
-Comme beaucoup de personnes, je passe trop de temps sur les réseaux sociaux ([Facebook](http://www.facebook.com/), [Instagram](https://www.instagram.com), [Youtube](https://www.youtube.com/), ...). Comment ces entreprises ont-ils fait pour nous rendre accrocs à leurs produits ? Ils ont créé de puissantes habitudes chez leurs utilisateurs.
+**Nous passons tous trop de temps sur les réseaux sociaux ([Facebook](http://www.facebook.com/), [Instagram](https://www.instagram.com), [Youtube](https://www.youtube.com/), ...). Comment ces entreprises ont-elles fait pour nous rendre accrocs à leurs produits ? Comment on t'elles réussit à former des habitudes chez leurs utilisateurs ? Le modèle "Hook" répond à ces questions en identifiant les différentes phases pour rendre un produit addictif.**
 
-Une habitude est en fait, un comportement effectué avec peu ou sans conscience. Est-ce qu'il vous arrive aussi d'ouvrir une de ces applications sans vraiment savoir pourquoi ?
+Est-ce qu'il vous est déjà arrivé d'ouvrir une application sans savoir vraiment pourquoi ? Ce comportement fait avec peu ou sans conscience, est en fait, une habitude créée par le produit que vous utilisez. **Le modèle Hook** identifie 4 phases pour créer une habitude d'utilisation. Comment peut-on s'inspirer de ce modèle pour rendre notre application addictive ?
 
-En tant que porteur de projet, comment peut on s'inspirer de ces applications pour former des habitudes chez nos utilisateurs ? **Le modèle Hook** identifie 4 phases pour créer une habitude d'utilisation. Mais attention, avant de créer une habitude vous devez créer un produit qui apporte suffisamment de valeur pour vos utilisateurs et que sa fréquence d'utilisation doit être suffisante. En effet, il est difficile de créer une habitude si votre application n'est utile qu'une fois par mois ...
+Avant de vouloir créer une habitude chez un utilisateur, il faut d'abord que votre produit apporte suffisamment de valeur et que sa fréquence d'utilisation soit suffisante. Il est difficile de créer une habitude si notre produit n'est utile qu'une fois par mois.
 
 *Le modèle Hook*
 
