@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Fabrice Payet <hello@fabricepayet.fr>",
   "dependencies": {
+    "axios": "^0.18.0",
     "email-validator": "^2.0.4",
     "gatsby": "^1.9.270",
     "gatsby-cli": "^1.1.58",
