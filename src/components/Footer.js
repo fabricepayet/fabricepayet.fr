@@ -162,6 +162,8 @@ const Footer = ({ data }) => {
             <MoreSocial>
               <ul>
                 <li><a href="https://www.linkedin.com/in/fabricepayetpro/" target="_blank"><i className="fab fa-linkedin" /> Linkedin</a></li>
+                <li><a href="https://www.facebook.com/fabricepayetpro" target="_blank"><i className="fab fa-facebook" /> Facebook</a></li>
+                <li><a href="https://twitter.com/fabricepayett" target="_blank"><i className="fab fa-twitter" /> Twitter</a></li>
                 <li><a href="https://github.com/fpayet" target="_blank"><i className="fab fa-github" /> GitHub</a></li>
                 <li><a href="https://bitbucket.org/FabricePayet" target="_blank"><i className="fab fa-bitbucket" /> Bitbucket</a></li>
               </ul>
