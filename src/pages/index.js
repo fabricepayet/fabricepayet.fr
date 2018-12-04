@@ -94,7 +94,7 @@ const IndexPage = ({ data }) => (
           <strong>développeur Full Stack</strong> et j'habite actuellement à{' '}
           <a href="https://www.iledelareunion.net/" target="_blank">
             la Réunion
-          </a>. Durant ces dernières années, j'ai pu accompagner plusieurs entreprises et porteurs de projet dans la création de leur produit. En tant que prestataire technique, je m'assure des bons choix techniques, de la conception, du développement et de la mise en production. Je sais aussi encadrer une équipe et organiser des cycles de développement en suivant les méthodologies agiles.
+          </a> 🌴. Durant ces dernières années, j'ai pu accompagner plusieurs entreprises et porteurs de projet dans la création de leur produit. En tant que prestataire technique, je m'assure des bons choix techniques, de la conception, du développement et de la mise en production. Je sais aussi encadrer une équipe et organiser des cycles de développement en suivant les méthodologies agiles.
         </p>
         Mes technos préférées sont:{' '}
         <a href="https://www.meteor.com/" target="_blank">
