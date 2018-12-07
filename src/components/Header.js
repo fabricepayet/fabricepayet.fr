@@ -195,7 +195,7 @@ const Header = ({ data }) => (
     <MainHeader bgImage={data.bgHeader.sizes.src} >
       <HeaderInner>
         <IdentityContainer>
-          <Img sizes={data.profile.sizes} alt="Photo Fabrice Payet" />
+          <Img sizes={data.profile.sizes} alt="Fabrice Payet: Développeur indépendant à la Réunion" />
           <NameContainer>
             <div style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '24px', lineHeight: '48px' }}>
               Fabrice Payet

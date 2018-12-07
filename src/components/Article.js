@@ -10,7 +10,7 @@ const ArticleStyled = styled.article`
 
   @media screen and (max-width: 800px) {
     padding-bottom: 20px;
-    margin-bottom: 6px;
+    margin: 6px auto;
   }
 
   &:hover {
