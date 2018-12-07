@@ -126,15 +126,23 @@ const Layout = styled.div`
 class TemplateWrapper extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      isMobileMenuOpen: false,
+    }
   }
 
   componentDidMount() {
-    //Open mobile menu
+
+    console.log('componentDidMount layout/index');
+
+    // Open mobile menu
     $('.menu__mobile-button, .mobile-menu__close').on('click', function () {
+      console.log('toggle menu');
       $('.mobile-menu').toggleClass('active');
     });
 
-    //Close mobile menu after click
+    // Close mobile menu after click
     $('.mobile-menu__wrapper ul li a').on('click', function () {
       $('.mobile-menu').removeClass('active');
     });
@@ -149,6 +157,7 @@ class TemplateWrapper extends Component {
         $('.mobile-menu').removeClass('mobile-menu--active');
       }
     }
+
     fixedHeader();
     $(window).on('scroll', function () {
       fixedHeader();
