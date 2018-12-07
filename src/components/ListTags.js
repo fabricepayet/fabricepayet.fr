@@ -5,6 +5,7 @@ const List = styled.ul`
   padding: 0;
   list-style: none;
   margin-left: 0;
+  margin-bottom: 0;
 `
 
 const Tag = styled.div`
@@ -13,7 +14,7 @@ const Tag = styled.div`
   line-height: 20px;
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(0,0,0,.14);
-  padding: 5px 10px;
+  padding: 6px 0 6px 10px ;
   margin-right: 10px;
   border-radius: 3px;
 `

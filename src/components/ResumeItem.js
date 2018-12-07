@@ -27,7 +27,7 @@ const CompanyLink = styled.a`
 const ResumeItemContainer = styled.div`
   display: flex;
   border-left: 2px solid #6d56c1;
-  padding-left: 25px;
+  padding-left: 24px;
   padding-bottom: 24px;
 
   &:before {
@@ -69,7 +69,7 @@ const Description = styled.ul`
   font-size: 0.8rem;
   font-style: italic;
   list-style: none;
-  margin-left: 0;
+  margin: 0;
   line-height: 1.2rem;
 
   li {
