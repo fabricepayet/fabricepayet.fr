@@ -172,9 +172,6 @@ class TemplateWrapper extends Component {
                 'fabrice, payet, développeur, freelance, réunion, react, application, mobile, web, meteorjs, startup, fullstack',
             },
           ]}
-          link={[
-            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
-          ]}
         >
           <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata" rel="stylesheet" />
 
@@ -183,6 +180,7 @@ class TemplateWrapper extends Component {
             src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
             crossorigin="anonymous"
           />
+          <link rel="icon" type="image/png" href={favicon} />
         </Helmet>
         <MainContainer data={this.props.data}>{this.props.children()}</MainContainer>
         <Footer data={this.props.data} />
