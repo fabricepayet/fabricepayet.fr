@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components';
 import MenuLinks from './MenuLinks';
 import Img from 'gatsby-image';
+import $ from 'jquery';
 
 const MainHeader = styled.div`
   border-bottom: 1px solid #ddd;
@@ -54,7 +55,7 @@ const IdentityContainer = styled.div`
   display: flex;
   align-items: center;
   color: white;
-  
+
   .gatsby-image-outer-wrapper {
     margin-right: 50px;
     margin-bottom: 0;
@@ -168,47 +169,86 @@ const NameContainer = styled.div`
   margin: 0 24px;
 `
 
-const Header = ({ data }) => (
-  <div>
-    <NavContainer className="menu">
-      <InnerContainer >
-        <MenuMobile className="menu__mobile">
-          <button type="button" className="menu__mobile-button">
-            <span style={{ outline: 'none' }}><i className="fa fa-bars" aria-hidden="true"></i></span>
-          </button>
-        </MenuMobile>
-        <MobileMenuContainer className="mobile-menu">
-          <div style={{ width: '100%', padding: '15px 0' }}>
-            <div className="mobile-menu__close">
-              <span><i className="fa fa-times" aria-hidden="true"></i></span>
-            </div>
-            <nav className="mobile-menu__wrapper">
-              <MenuLinks />
-            </nav>
-          </div>
-        </MobileMenuContainer>
-        <MenuContainer className="menu__wrapper">
-          <MenuLinks />
-        </MenuContainer>
-      </InnerContainer>
-    </NavContainer>
-    <MainHeader bgImage={data.bgHeader.sizes.src} >
-      <HeaderInner>
-        <IdentityContainer>
-          <Img sizes={data.profile.sizes} alt="Fabrice Payet: Développeur indépendant à la Réunion" />
-          <NameContainer>
-            <div style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '24px', lineHeight: '48px' }}>
-              Fabrice Payet
-            </div>
+class Header extends Component {
+  constructor(props) {
+    super(props);
+  }
 
-            <div style={{ fontSize: '24px' }}>
-              {data.site.siteMetadata.title.split('-')[1]}
-            </div>
-          </NameContainer>
-        </IdentityContainer>
-      </HeaderInner>
-    </MainHeader>
-  </div >
-)
+  componentDidMount() {
+
+    // /!\ Should remove events on componentWillUnmount
+
+    // Open mobile menu
+    $('.menu__mobile-button, .mobile-menu__close').on('click', function () {
+      $('.mobile-menu').toggleClass('active');
+    });
+
+    // Close mobile menu after click
+    $('.mobile-menu__wrapper ul li a').on('click', function () {
+      $('.mobile-menu').removeClass('active');
+    });
+
+    function fixedHeader() {
+      var ww = $(window).scrollTop();
+      if (ww > 0) {
+        $('.menu').addClass('menu--active');
+        $('.mobile-menu').addClass('mobile-menu--active');
+      } else {
+        $('.menu').removeClass('menu--active');
+        $('.mobile-menu').removeClass('mobile-menu--active');
+      }
+    }
+
+    fixedHeader();
+    $(window).on('scroll', function () {
+      fixedHeader();
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <NavContainer className="menu">
+          <InnerContainer >
+            <MenuMobile className="menu__mobile">
+              <button type="button" className="menu__mobile-button">
+                <span style={{ outline: 'none' }}><i className="fa fa-bars" aria-hidden="true"></i></span>
+              </button>
+            </MenuMobile>
+            <MobileMenuContainer className="mobile-menu">
+              <div style={{ width: '100%', padding: '15px 0' }}>
+                <div className="mobile-menu__close">
+                  <span><i className="fa fa-times" aria-hidden="true"></i></span>
+                </div>
+                <nav className="mobile-menu__wrapper">
+                  <MenuLinks />
+                </nav>
+              </div>
+            </MobileMenuContainer>
+            <MenuContainer className="menu__wrapper">
+              <MenuLinks />
+            </MenuContainer>
+          </InnerContainer>
+        </NavContainer>
+        <MainHeader bgImage={this.props.data.bgHeader.sizes.src} >
+          <HeaderInner>
+            <IdentityContainer>
+              <Img sizes={this.props.data.profile.sizes} alt="Fabrice Payet: Développeur indépendant à la Réunion" />
+              <NameContainer>
+                <div style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '24px', lineHeight: '48px' }}>
+                  Fabrice Payet
+                </div>
+
+                <div style={{ fontSize: '24px' }}>
+                  {this.props.data.site.siteMetadata.title.split('-')[1]}
+                </div>
+              </NameContainer>
+            </IdentityContainer>
+          </HeaderInner>
+        </MainHeader>
+      </div >
+    );
+  }
+}
 
 export default Header
