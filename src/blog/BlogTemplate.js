@@ -144,7 +144,7 @@ export default class BlogTemplate extends Component {
           <Link to="/blog"><i className="fa fa-arrow-left"></i> Retour</Link>
         </BackContainer>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
-        <Date>{data.markdownRemark.frontmatter.date}</Date>
+        <Date>publié le {data.markdownRemark.frontmatter.date}</Date>
         <div style={{ marginBottom: '24px' }}>
           <div style={{ fontSize: 'small', color: 'grey' }}>Partager cet article: </div>
           <SocialButtonContainer>
