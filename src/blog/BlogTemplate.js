@@ -42,7 +42,6 @@ const ArticleContainer = styled.div`
   max-width: 1140px;
 
   p {
-    text-align: justify;
     line-height: 30px;
     margin-bottom: 1rem;
   }
