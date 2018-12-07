@@ -68,7 +68,7 @@ export default class MailChimp extends Component {
             <div>
 
               <div>
-                <div style={{ color: "#6d55c1", fontStyle: 'italic', textAlign: 'center', maxWidth: '460px', margin: '12px auto' }}>
+                <div style={{ color: "#6d55c1", fontStyle: 'italic', textAlign: 'center', maxWidth: '600px', margin: '12px auto', fontSize: 'smaller', lineHeight: '1em' }}>
                   Vous avez aimé cet article ? Recevez le prochain directement dans votre boite email
                     </div>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
