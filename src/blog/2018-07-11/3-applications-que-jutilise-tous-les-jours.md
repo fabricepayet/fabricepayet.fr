@@ -4,7 +4,7 @@ date: "2018-07-11"
 cover: https://s3.eu-west-3.amazonaws.com/fabricepayetfr/images/duolingo.png
 ---
 
-**Aujourd'hui je vous présente 3 applications que j'apprécie vraiment et que j'utile tous les jours. Elle me permette d'apprendre de nouvelles choses ou améliorer mon quotidien.**
+**Aujourd'hui je vous présente 3 applications que j'utilise tous les jours. Elle me permette d'apprendre de nouvelles choses ou simplement améliorer mon quotidien.**
 
 ## Duolingo: Apprendre une nouvelle langue facilement
 
